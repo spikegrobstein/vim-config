@@ -8,6 +8,19 @@ set nocompatible
 syntax on
 filetype plugin indent on
 
+"ack current word in command mode
+function! AckGrep()
+  let command = "ack ".expand("<cword>")
+  cexpr system(command)
+  cw
+endfunction
+
+function! AckVisual()
+  normal gv"xy
+  let command = "ack ".@x
+  cexpr system(command)
+  cw
+endfunction
 
 " SHORTCUT KEY MAPPINGS """""""""""""""""""
 
@@ -50,6 +63,8 @@ autocmd BufRead,BufNewFile *.jasmine_fixture set filetype=html
 " SETTINGS """"""""""""""""""""""""""""""""
 "set t_Co=256
 colorscheme vividchalk
+colorscheme solarized
+set background=dark
 
 "Show whitespace, fullstops for trailing whitespace
 set list
@@ -126,6 +141,11 @@ map <leader>k ^Wk
 " Add new windows towards the right and bottom.
 set splitbelow splitright
 
+" AckGrep current word
+map <leader>a :call AckGrep()<CR>
+" AckVisual current selection
+vmap <leader>a :call AckVisual()<CR>
+
 " set question mark to be part of a VIM word. in Ruby it is!
 autocmd FileType ruby set iskeyword=@,48-57,_,?,!,192-255
 autocmd FileType scss set iskeyword=@,48-57,_,-,?,!,192-255
@@ -142,6 +162,9 @@ map <leader>rf :FufRenewCache<CR>
 " ctags again with gemhome added
 map <leader>t :!/usr/local/bin/ctags -R --exclude=.git --exclude=log * `rvm gemhome`/*<CR>
 map <leader>T :!rdoc -f tags -o tags * `rvm gemhome` --exclude=.git --exclude=log
+
+" git blame
+map <leader>g :Gblame<CR>
 
 " F7 reformats the whole file and leaves you where you were (unlike gg)
 map <silent> <F7> mzgg=G'z :delmarks z<CR>:echo "Reformatted."<CR>
