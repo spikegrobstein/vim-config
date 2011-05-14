@@ -1,11 +1,11 @@
 "pathogen setup
-filetype off 
+filetype off "This is to get around a bug
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
 "see vim-rails plugin doc [rails.txt]
-set nocompatible
-syntax on
+set nocompatible  "Remove compatibility with vi
+syntax on "Syntax highlighting
 filetype plugin indent on
 
 "ack current word in command mode
@@ -37,6 +37,7 @@ vmap <tab> >gv
 vmap <s-tab> <gv
 
 "Undo/Redo using undo tree with cmd-z/cmd-shift-z
+"Doesn't MacVim already have this?
 map <D-z> :earlier 1<CR>
 map <D-Z> :later 1<CR>
 
@@ -60,24 +61,39 @@ autocmd BufRead,BufNewFile *.json set filetype=javascript
 "highlight jasmine_fixture files as HTML
 autocmd BufRead,BufNewFile *.jasmine_fixture set filetype=html
 
+"highlight some other filetypes as ruby
+au BufRead,BufNewFile *.thor set filetype=ruby
+au BufRead,BufNewFile *.god set filetype=ruby
+au BufRead,BufNewFile Gemfile* set filetype=ruby
+au BufRead,BufNewFile Vagrantfile set filetype=ruby
+au BufRead,BufNewFile soloistrc set filetype=ruby
 " SETTINGS """"""""""""""""""""""""""""""""
 "set t_Co=256
 colorscheme vividchalk
 colorscheme solarized
 set background=dark
 
-"Show whitespace, fullstops for trailing whitespace
+"Show whitespace, utf8 thing for trailing whitespace, and show tabs
 set list
-set listchars=trail:.
+set listchars=tab:▸\ ,trail:¬
 
-"Keep backup files somewhere else
-set backupdir=~/.vim-tmp,~/tmp,/var/tmp,/tmp
+"Don't make noise
+set visualbell
 
-"No swapfiles
+"Allow the cursor to display plast the line one char
+set virtualedit=onemore
+
+"No swap or backup files
 set noswapfile
+set nobackup
+set nowritebackup
 
 "no toolbar
 set guioptions-=T
+
+"Search should be case sensitive only to uppercase chars
+set ignorecase
+set smartcase
 
 "no gui tab bar
 set guioptions-=e
@@ -86,7 +102,8 @@ set guioptions-=e
 set guioptions-=rL
 
 "font
-set guifont=Inconsolata:h24
+set guifont=Inconsolata:h24 "Huge and not always there ...
+set guifont=Monaco:h18
 
 "history size
 set history=1024
@@ -183,8 +200,9 @@ set showcmd
 " TextMate.
 imap <D-CR> <ESC>o
 
+
 " Change background color when inserting.
-let g:insert_mode_background_color = "#18434E"
+"let g:insert_mode_background_color = "#18434E"
 
 " Find unused cucumber steps.
 command! CucumberFindUnusedSteps :call CucumberFindUnusedSteps()
