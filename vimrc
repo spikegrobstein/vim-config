@@ -75,7 +75,7 @@ set background=dark
 
 "Show whitespace, utf8 thing for trailing whitespace, and show tabs
 set list
-set listchars=tab:▸\ ,trail:¬
+set listchars=tab:▸\ ,trail:.
 
 "Don't make noise
 set visualbell
