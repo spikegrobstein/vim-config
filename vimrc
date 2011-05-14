@@ -202,7 +202,7 @@ imap <D-CR> <ESC>o
 
 
 " Change background color when inserting.
-"let g:insert_mode_background_color = "#18434E"
+let g:insert_mode_background_color = "#18434E"
 
 " Find unused cucumber steps.
 command! CucumberFindUnusedSteps :call CucumberFindUnusedSteps()
@@ -281,3 +281,4 @@ map <Leader><Leader> :!
 " (Keep this at the end.)
 " Machine-local vim settings.
 silent source ~/.vimrc.local
+
