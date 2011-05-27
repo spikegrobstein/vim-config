@@ -58,3 +58,6 @@
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/vim-irblack"]
+	path = bundle/vim-irblack
+	url = https://github.com/wgibbs/vim-irblack.git
