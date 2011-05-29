@@ -191,8 +191,6 @@ set showcmd
 imap <D-CR> <ESC>o
 
 
-" Change background color when inserting.
-let g:insert_mode_background_color = "#18434E"
 
 " Find unused cucumber steps.
 command! CucumberFindUnusedSteps :call CucumberFindUnusedSteps()
@@ -272,14 +270,15 @@ map <leader>t :CommandT<CR>
 " Easy access to the shell.
 map <Leader><Leader> :!
 
-
+"Some things people like in their .vimrc.local
 "no gui tab bar
 "set guioptions-=e
 
 "no scrollbars
 "set guioptions-=rL
 
-
+"Change background color when inserting.
+"let g:insert_mode_background_color = "#18434E"
 
 " (Keep this at the end.)
 " Machine-local vim settings.
