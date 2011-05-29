@@ -167,7 +167,7 @@ autocmd FileType ruby imap  <Space>=><Space>
 map <leader>rv :source ~/.vimrc<CR>
 
 " ctags again with gemhome added
-map <leader>t :!/usr/local/bin/ctags -R --exclude=.git --exclude=log * `rvm gemhome`/*<CR>
+map <leader>rt :!/usr/local/bin/ctags -R --exclude=.git --exclude=log * `rvm gemhome`/*<CR>
 map <leader>T :!rdoc -f tags -o tags * `rvm gemhome` --exclude=.git --exclude=log
 
 " git blame
@@ -265,6 +265,7 @@ set cursorline
 " Command-T
 let g:CommandTMaxHeight=20
 map <D-N> :CommandTFlush<CR>:CommandT<CR>
+map <leader>t :CommandT<CR>
 
 " Easy access to the shell.
 map <Leader><Leader> :!
