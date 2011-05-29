@@ -69,7 +69,6 @@ au BufRead,BufNewFile Vagrantfile set filetype=ruby
 au BufRead,BufNewFile soloistrc set filetype=ruby
 " SETTINGS """"""""""""""""""""""""""""""""
 "set t_Co=256
-colorscheme vividchalk
 colorscheme solarized
 set background=dark
 
@@ -94,12 +93,6 @@ set guioptions-=T
 "Search should be case sensitive only to uppercase chars
 set ignorecase
 set smartcase
-
-"no gui tab bar
-set guioptions-=e
-
-"no scrollbars
-set guioptions-=rL
 
 "font
 set guifont=Inconsolata:h24 "Huge and not always there ...
@@ -173,9 +166,6 @@ autocmd FileType ruby imap  <Space>=><Space>
 " reload .vimrc
 map <leader>rv :source ~/.vimrc<CR>
 
-" refresh the FuzzyFinder cache
-map <leader>rf :FufRenewCache<CR>
-
 " ctags again with gemhome added
 map <leader>t :!/usr/local/bin/ctags -R --exclude=.git --exclude=log * `rvm gemhome`/*<CR>
 map <leader>T :!rdoc -f tags -o tags * `rvm gemhome` --exclude=.git --exclude=log
@@ -235,6 +225,7 @@ let NERDSpaceDelims = 1
 
 " Comment/uncomment lines.
 map <leader>/ <plug>NERDCommenterToggle
+map <D-/> <plug>NERDCommenterToggle
 
 " Copy current file path to system pasteboard.
 map <silent> <D-C> :let @* = expand("%")<CR>:echo "Copied: ".expand("%")<CR>
@@ -277,6 +268,15 @@ map <D-N> :CommandTFlush<CR>:CommandT<CR>
 
 " Easy access to the shell.
 map <Leader><Leader> :!
+
+
+"no gui tab bar
+"set guioptions-=e
+
+"no scrollbars
+"set guioptions-=rL
+
+
 
 " (Keep this at the end.)
 " Machine-local vim settings.
