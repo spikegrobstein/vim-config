@@ -303,10 +303,9 @@ map Y y$
 " Don't time out during commands.
 set notimeout
 
-" Turn off <F1> and double-click for new tab.
+" Turn off <F1>
 map <F1> <Nop>
 imap <F1> <Nop>
-map <2-LeftMouse> <Nop>
 
 " Don't prompt for file changes outside MacVim
 set autoread
