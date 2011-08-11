@@ -317,6 +317,7 @@ set cursorline
 let g:CommandTMaxHeight=20
 map <D-N> :CommandTFlush<CR>:CommandT<CR>
 map <Leader>f :CommandTFlush<CR>:CommandT<CR>
+set wildignore+=tmp/**,public/uploads/**,tags,vendor/**,public/images/**
 
 " Easy access to the shell.
 map <Leader><Leader> :!
