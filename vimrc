@@ -78,6 +78,9 @@ endif
 set background=dark
 colorscheme solarized
 
+" Turn on mouse support, even in the terminal.
+set mouse=a
+
 "Show whitespace, fullstops for trailing whitespace
 set list
 if has("gui_running")
