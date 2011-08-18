@@ -401,3 +401,7 @@ map <Esc>[A <Up>
 " (Keep this at the end.)
 " Machine-local vim settings.
 silent source ~/.vimrc.local
+
+" Turn off ri tooltips that don't work with Ruby 1.9 yet
+" http://code.google.com/p/macvim/issues/detail?id=342
+set noballooneval
