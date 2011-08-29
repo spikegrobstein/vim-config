@@ -146,7 +146,7 @@ map <leader>b :FufBuffer<CR>
 map <leader>f <Plug>PeepOpen
 map <leader><C-N> :FufFile **/<CR>
 map <D-e> :FufBuffer<CR>
-map <leader>, :FufFile **/<CR>
+map <leader>n :FufFile **/<CR>
 map <D-N> :FufFile **/<CR>
 
 " search
