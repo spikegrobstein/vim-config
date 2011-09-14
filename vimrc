@@ -247,9 +247,10 @@ endfunction
 
 command! RunTests :call RunTests()
 function! RunTests()
+  let spec_command = system('if [ x != "x"$(which spec) ] ; then echo -n spec ; elif [ x != "x"$(which rspec) ] ; then echo -n rspec ; fi')
   let filename = expand("%")
   if filename =~ '_spec\.rb$'
-    call RunTestTool("be rspec ".expand("%"))
+    call RunTestTool("be ".spec_command." ".expand("%"))
   endif
   if filename =~ '\.feature$'
     call RunTestTool("cuke ".expand("%"))
