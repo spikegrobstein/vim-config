@@ -390,14 +390,14 @@ function! AutoincrementI()
   return g:i
 endfunction
 
-" Map Cmd-S to <F12> in iTerm2 for Save.
-map <F12> :w<CR>
-map! <F12> <C-o>:w<CR>
+if !has("gui_running")
+  " Map Cmd-S to <F12> in iTerm2 for Save.
+  map <F12> :w<CR>
+  map! <F12> <C-o>:w<CR>
 
-map <F11> :q<CR>
-map! <F11> <C-o>:q<CR>
-
-map <Esc>[A <Up>
+  " Makes Command-T work again with arrow keys.  Not clear why.
+  map <Esc>[A <Up>
+end
 
 " (Keep this at the end.)
 " Machine-local vim settings.
