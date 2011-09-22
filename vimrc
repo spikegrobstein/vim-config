@@ -40,7 +40,7 @@ vmap <tab> >gv
 vmap <s-tab> <gv
 
 " Remove highlighting post-search
-nmap <leader>y :nohls
+nmap <leader>y :nohls<CR>
 
 "Undo/Redo using undo tree with cmd-z/cmd-shift-z
 "Doesn't MacVim already have this?
