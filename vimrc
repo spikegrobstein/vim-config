@@ -24,6 +24,9 @@ endfunction
 
 " SHORTCUT KEY MAPPINGS """""""""""""""""""
 
+" kj - The intuitive way to get out of insert mode
+imap kj <Esc>
+
 "prev/next in quickfix file listing (e.g. search results)
 map <M-D-Down> :cn<CR>
 map <M-D-Up> :cp<CR>
@@ -35,6 +38,9 @@ map <M-D-Right> :bn<CR>
 "indent/unindent visual mode selection with tab/shift+tab
 vmap <tab> >gv
 vmap <s-tab> <gv
+
+" Remove highlighting post-search
+nmap <leader>y :nohls
 
 "Undo/Redo using undo tree with cmd-z/cmd-shift-z
 "Doesn't MacVim already have this?
@@ -112,6 +118,8 @@ set number
 
 "always show statusline
 set laststatus=2
+set statusline=
+set statusline+=\ %t\ \|\ len:\ \%L\ \|\ type:\ %Y\ \|\ ascii:\ \%03.3b\ \|\ hex:\ %2.2B\ \|\ line:\ \%2l
 
 "show matching brackets
 set showmatch
@@ -126,13 +134,14 @@ set expandtab
 
 " Rayban & Peter
 let mapleader = ","
+let maplocalleader = ";"
 
 " FuzzyFinder and switchback commands
 map <leader>e :e#<CR>
 map <leader>b :FufBuffer<CR>
 map <leader>f <Plug>PeepOpen
 map <leader><C-N> :FufFile **/<CR>
-map <D-e> :FufBuffer<CR>
+map <D-e> :CommandTBuffer<CR>
 map <D-N> :FufFile **/<CR>
 
 " search
@@ -143,6 +152,10 @@ vmap <leader>s :s/
 map <leader>v :vsp<CR>
 map <leader>w ^Ww
 map <leader>= ^W=
+nmap <C-j> ^Wj
+nmap <C-k> ^Wk
+nmap <C-h> ^Wh
+nmap <C-l> ^Wl
 
 " Move between horizontally split screens.
 map <leader>j ^Wj
@@ -175,6 +188,9 @@ map <leader>g :Gblame<CR>
 
 " F7 reformats the whole file and leaves you where you were (unlike gg)
 map <silent> <F7> mzgg=G'z :delmarks z<CR>:echo "Reformatted."<CR>
+
+" Auto-indent file without moving to F-row
+nmap <leader>= gg=G``
 
 " Write all writeable buffers when changing buffers or losing focus.
 autocmd FocusLost * silent! wall
@@ -220,6 +236,12 @@ nnoremap <C-y> 3<C-y>
 
 " Pad comment delimeters with spaces.
 let NERDSpaceDelims = 1
+
+" Small default width for NERDTree pane
+let g:NERDTreeWinSize = 20
+
+" Change working directory if you change root directories
+let g:NERDTreeChDirMode=2
 
 " Comment/uncomment lines.
 map <leader>/ <plug>NERDCommenterToggle
