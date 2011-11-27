@@ -1,4 +1,4 @@
-"ack current word in command mode
+" Find current word in command mode
 function! AckGrep()
   let command = "ack ".expand("<cword>")
   cexpr system(command)

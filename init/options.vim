@@ -1,92 +1,54 @@
-" SETTINGS """"""""""""""""""""""""""""""""
+set guifont=Inconsolata:h24
+set guioptions-=T               " Remove GUI toolbar
+set guioptions-=e               " Use text tab bar, not GUI
+set guioptions-=rL              " Remove scrollbars
+set notimeout                   " No command timeout
+set showcmd                     " Show typed command prefixes while waiting for operator
+set mouse=a                     " Use mouse support in XTerm/iTerm.
 
-" Turn on mouse support, even in the terminal.
-set mouse=a
+set expandtab                   " Use soft tabs
+set tabstop=2                   " Tab settings
+set autoindent
+set smarttab                    " Use shiftwidth to tab at line beginning
+set shiftwidth=2                " Width of autoindent
+set number                      " Line numbers
+set nowrap                      " No wrapping
+set backspace=indent,eol,start " Let backspace work over anything.
+set wildignore+=tags               " Ignore tags when globbing.
+set wildignore+=tmp/**             " ...Also tmp files.
+set wildignore+=public/uploads/**  " ...Also uploads.
+set wildignore+=public/images/**   " ...Also images.
+set wildignore+=vendor/**          " ...Also vendor.
 
-"Show whitespace, fullstops for trailing whitespace
-set list
+set list                        " Show whitespace
 if has("gui_running")
   set listchars=trail:·
 else
   set listchars=trail:~
 endif
 
-"Swapfiles
-set swapfile
+set showmatch                   " Show matching brackets
+set hidden                      " Allow hidden, unsaved buffers
+set splitright                  " Add new windows towards the right
+set splitbelow                  " ... and bottom
+set wildmode=list:longest       " Bash-like tab completion
+set scrolloff=3                 " Scroll when the cursor is 3 lines from edge
+set cursorline                  " Highlight current line
+set laststatus=2                " Always show statusline
 
-"Keep swap and backup files somewhere else
+set incsearch                   " Incremental search
+set history=1024                " History size
+
+set autoread                    " No prompt for file changes outside Vim
+
+set swapfile                    " Keep swapfiles
 set directory=~/.vim-tmp,~/tmp,/var/tmp,/tmp
 set backupdir=~/.vim-tmp,~/tmp,/var/tmp,/tmp
 
-"no toolbar
-set guioptions-=T
-
-"no gui tab bar
-set guioptions-=e
-
-"no scrollbars
-set guioptions-=rL
-
-"font
-set guifont=Inconsolata:h24
-
-"history size
-set history=1024
-
-"incremental search
-set incsearch
-
-"no wrapping
-set nowrap
-
-"line numbers
-set number
-
-"always show statusline
-set laststatus=2
-
-"show matching brackets
-set showmatch
-
-"tab settings
-set tabstop=2
-set smarttab
-set shiftwidth=2
-set autoindent
-set expandtab
-
-" Allow backspace to work more flexibly.
-set backspace=2
-
-" Add new windows towards the right and bottom.
-set splitbelow splitright
 
 " Write all writeable buffers when changing buffers or losing focus.
-autocmd BufLeave,FocusLost * silent! wall
-set autowriteall
-
-" Let unsaved buffers exist in the background.
-set hidden
-
-" Show typed command prefixes while waiting for operator.
-set showcmd
-
-" Make command completion act more like bash
-set wildmode=list:longest
-
-" Start scrolling when the cursor is within 3 lines of the edge.
-set scrolloff=3
-
-" Don't time out during commands.
-set notimeout
-
-" Don't prompt for file changes outside MacVim
-set autoread
-
-" Highlight current row.
-set cursorline
-
-set wildignore+=tmp/**,public/uploads/**,tags,vendor/**,public/images/**
+set autowriteall                " Save when doing various buffer-switching things.
+autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or MacVim loses focus.
 
 " Turn off ri tooltips that don't work with Ruby 1.9 yet
 " http://code.google.com/p/macvim/issues/detail?id=342

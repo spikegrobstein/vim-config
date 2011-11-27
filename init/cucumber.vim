@@ -1,4 +1,4 @@
-" Find unused cucumber steps.
+" Find unused Cucumber steps
 command! CucumberFindUnusedSteps :call CucumberFindUnusedSteps()
 function! CucumberFindUnusedSteps()
   let olderrorformat = &l:errorformat
