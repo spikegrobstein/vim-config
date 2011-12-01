@@ -36,6 +36,7 @@ map <D-<>       :tabedit ~/.vimrc<CR>
 
 " Reload .vimrc
 map <leader>rv  :source ~/.vimrc<CR>
+
 " Remove highlighting post-search
 nmap <leader>y  :nohls<CR>
 
@@ -103,3 +104,8 @@ imap <F1>           <Nop>
 
 " Easy access to the shell
 map <Leader><Leader> :!
+
+" AckGrep current word
+map <leader>a :call AckGrep()<CR>
+" AckVisual current selection
+vmap <leader>a :call AckVisual()<CR>
