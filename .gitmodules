@@ -96,3 +96,9 @@
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = https://github.com/sjl/gundo.vim.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular
+[submodule "bundle/cucumbertables/ftplugin"]
+	path = bundle/cucumbertables/ftplugin
+	url = git://gist.github.com/1486660.git
