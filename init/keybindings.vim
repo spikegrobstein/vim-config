@@ -55,21 +55,12 @@ map <M-D-Right> :bn<CR>
 vmap <tab> >gv
 vmap <s-tab> <gv
 
-" FuzzyFinder and switchback commands
-map <leader>e   :e#<CR>
-map <leader>b   :FufBuffer<CR>
-map <leader>f   <Plug>PeepOpen
-map <leader><C-N> :FufFile **/<CR>
-map <D-e> :FufBuffer<CR>
-map <leader>n :FufFile **/<CR>
-map <D-N> :FufFile **/<CR>
-
-" refresh the FuzzyFinder cache
-map <leader>rf :FufRenewCache<CR>
-
-" Command-T
-map <D-N>       :CommandTFlush<CR>:CommandT<CR>
-map <leader>f   :CommandTFlush<CR>:CommandT<CR>
+" ctrl-p
+let g:ctrlp_map = '<leader>f'
+map <D-N> :CtrlP<CR>
+map <leader>b   :CtrlPBuffer<CR>
+map <leader>e   :CtrlPBuffer<CR>
+map <D-e> :CtrlPBuffer<CR>
 
 " ctags with rails load path
 map <leader>t :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R public/javascripts<CR>
