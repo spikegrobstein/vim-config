@@ -71,11 +71,12 @@ let g:ctrlp_map = '<leader>f'
 map  <D-N>     :CtrlP<CR>
 imap <D-N>     <Esc>:CtrlP<CR>
 nmap <leader>t :CtrlP<CR>
+" Recent buffer navigation
 map  <leader>b :CtrlPBuffer<CR>
 map  <D-e>     :CtrlPBuffer<CR>
 map  <leader>e :e#<CR>
 
-" Re-index ctags, including Gem home
+" ctags with rails load path
 map <leader>rt  :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R public/javascripts<CR>
 map <leader>T   :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
 

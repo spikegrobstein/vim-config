@@ -50,8 +50,8 @@ set laststatus=2                " Always show statusline
 
 set incsearch                   " Incremental search
 set history=1024                " History size
-set ignorecase                  " Ignore case
-set smartcase                   " ... unless uppercase characters are involved
+set ignorecase                  " Ignore case by default
+set smartcase                   " Smart case-sensitivity when searching (overrides ignorecase)
 
 set autoread                    " No prompt for file changes outside Vim
 
@@ -65,8 +65,7 @@ set hls                         " search with highlights by default
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>""
 
 " Write all writeable buffers when changing buffers or losing focus.
-
-set autowriteall                " Save when focus is lost
+set autowriteall                " Save when doing various buffer-switching things.
 autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or MacVim loses focus.
 
 " Turn off ri tooltips that don't work with Ruby 1.9 yet
