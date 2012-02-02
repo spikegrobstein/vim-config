@@ -55,12 +55,12 @@ map <M-D-Right> :bn<CR>
 vmap <tab> >gv
 vmap <s-tab> <gv
 
-" Recent file navigation
+" ctrl-p
 let g:ctrlp_map = '<leader>f'
-map <D-N>     :CtrlP<CR>
-map <leader>b :CtrlPBuffer<CR>
-map <D-e>     :CtrlPBuffer<CR>
-map <leader>e :e#<CR>
+map <D-N> :CtrlP<CR>
+map <leader>b   :CtrlPBuffer<CR>
+map <leader>e   :CtrlPBuffer<CR>
+map <D-e> :CtrlPBuffer<CR>
 
 " ctags with rails load path
 map <leader>t :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R public/javascripts<CR>
