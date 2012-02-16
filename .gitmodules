@@ -105,3 +105,6 @@
 [submodule "bundle/cucumbertables/ftplugin"]
 	path = bundle/cucumbertables/ftplugin
 	url = git://gist.github.com/1486660.git
+[submodule "bundle/handlebars"]
+	path = bundle/handlebars
+	url = git://github.com/nono/vim-handlebars.git
