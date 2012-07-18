@@ -7,6 +7,11 @@
     git submodule update --init
     ln -s ~/.vim/vimrc ~/.vimrc
 
+## tmux support (optional)
+If you will be using VIM with tmux for remote pairing or window management, 
+see the README at [https://github.com/pivotal/tmux-config](https://github.com/pivotal/tmux-config)
+
+
 # Updating
 
 As long as your checkout is kept clean, you can easily update, rebase your local changes and update submodules with:
