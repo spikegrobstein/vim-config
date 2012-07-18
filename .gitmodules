@@ -114,3 +114,6 @@
 [submodule "bundle/tmux-config"]
 	path = bundle/tmux-config
 	url = git://github.com/pivotal/tmux-config.git
+[submodule "bundle/vim-tomorrow-theme"]
+	path = bundle/vim-tomorrow-theme
+	url = https://github.com/chriskempson/vim-tomorrow-theme.git
