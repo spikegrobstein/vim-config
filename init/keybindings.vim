@@ -7,6 +7,9 @@ let maplocalleader = ";"
 " kj - The intuitive way to get out of insert mode
 imap kj         <Esc>
 
+" jj - The most intuitive way to get out of insert mode. Like a boss!
+imap jj         <Esc>
+
 " Make Y consistent with D and C
 map Y           y$
 
