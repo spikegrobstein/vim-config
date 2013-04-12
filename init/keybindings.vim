@@ -51,12 +51,6 @@ imap <D-CR>     <Esc>o
 nnoremap <C-e>  3<C-e>
 nnoremap <C-y>  3<C-y>
 
-" File tree browser
-map \           :NERDTreeToggle<CR>
-
-" File tree browser showing current file - pipe (shift-backslash)
-map \|          :NERDTreeFind<CR>
-
 " Previous/next quickfix file listings (e.g. search results)
 map <M-D-Down>  :cn<CR>
 map <M-D-Up>    :cp<CR>
