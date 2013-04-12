@@ -30,10 +30,6 @@
 	path = bundle/vim-repeat
 	url = git://github.com/tpope/vim-repeat.git
 	ignore = dirty
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
-	ignore = dirty
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
@@ -126,3 +122,6 @@
 [submodule "bundle/hammer.vim"]
 	path = bundle/hammer.vim
 	url = https://github.com/matthias-guenther/hammer.vim.git
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
