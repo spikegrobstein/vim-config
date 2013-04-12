@@ -1,4 +1,4 @@
-set guifont=Menlo:h18
+set guifont=Menlo:h12
 set guioptions-=T               " Remove GUI toolbar
 set guioptions-=e               " Use text tab bar, not GUI
 set guioptions-=rL              " Remove scrollbars
@@ -19,7 +19,6 @@ set wildignore+=tags               " Ignore tags when globbing.
 set wildignore+=tmp/**             " ...Also tmp files.
 set wildignore+=public/uploads/**  " ...Also uploads.
 set wildignore+=public/images/**   " ...Also images.
-set wildignore+=vendor/**          " ...Also vendor.
 
 set list                        " Show whitespace
 if has("gui_running")
