@@ -1,3 +1,8 @@
+This is my personal fork of the pivotal vim config. It's got a couple extra plugins
+and some tweaks off the upstream's default configuration. Some cruft has been removed, too.
+
+I'll try to keep it up to date.
+
 # To Install
 (Re)move ~/.vim and ~/.vimrc if you have them already, and run:
 
