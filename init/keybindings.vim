@@ -32,6 +32,7 @@ nmap <C-l>      <C-w>l
 
 " Create a new tab
 map <leader>t   :tabedit<CR>
+nmap <C-t>      :tabedit<CR>
 
 " Open .vimrc file in new tab. Think Command + , [Preferences...] but with Shift.
 map <D-<>       :tabedit ~/.vimrc<CR>
