@@ -124,4 +124,4 @@
 	url = https://github.com/airblade/vim-gitgutter
 [submodule "bundle/taskpaper.vim"]
 	path = bundle/taskpaper.vim
-	url = git@github.com:davidoc/taskpaper.vim.git
+	url = https://github.com/davidoc/taskpaper.vim.git
