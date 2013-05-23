@@ -61,14 +61,6 @@ map <M-D-Right> :bn<CR>
 vmap <tab> >gv
 vmap <s-tab> <gv
 
-" FuzzyFinder and switchback commands
-map <leader>e   :e#<CR>
-map <leader>b   :FufBuffer<CR>
-map <leader><C-N> :FufFile **/<CR>
-map <D-e> :FufBuffer<CR>
-map <leader>n :FufFile **/<CR>
-map <D-N> :FufFile **/<CR>
-
 " refresh the FuzzyFinder cache
 map <leader>rf :FufRenewCache<CR>
 
