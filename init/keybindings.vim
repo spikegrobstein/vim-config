@@ -81,7 +81,7 @@ map <leader>rt  :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/b
 map <leader>T   :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
 
 " Git blame
-map <leader>g   :Gblame<CR>
+map <leader>gb   :Gblame<CR>
 
 " Comment/uncomment lines
 map <leader>/   <plug>NERDCommenterToggle
