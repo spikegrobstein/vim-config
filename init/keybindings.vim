@@ -106,3 +106,6 @@ nmap du :diffupdate<CR>
 
 " Gundo.vim
 map <leader>u :GundoToggle<CR>
+
+" vim-gitgutter toggle
+map <leader>gg :GitGutterToggle<CR>

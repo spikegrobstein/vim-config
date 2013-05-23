@@ -66,6 +66,8 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>""
 set autowriteall                " Save when doing various buffer-switching things.
 autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or MacVim loses focus.
 
+let g:gitgutter_enabled = 0
+
 " Turn off ri tooltips that don't work with Ruby 1.9 yet
 " http://code.google.com/p/macvim/issues/detail?id=342
 if has("gui_running")
