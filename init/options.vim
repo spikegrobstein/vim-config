@@ -73,3 +73,7 @@ let g:gitgutter_enabled = 0
 if has("gui_running")
   set noballooneval
 endif
+
+if has('mouse_sgr')
+    set ttymouse=sgr
+endif
