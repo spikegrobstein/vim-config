@@ -29,9 +29,9 @@ map <leader>t   :tabedit<CR>
 nmap <C-t>      :tabedit<CR>
 
 " create new tab and launch command-T
-map <leader>T   <leader>t<leader>f
+map <silent> <leader>T   <leader>t<leader>f
 " create new split and launch command-T
-map <leader>V   <leader>v<leader>f
+map <silent> <leader>V   <leader>v<leader>f
 
 " Open .vimrc file in new tab. Think Command + , [Preferences...] but with Shift.
 map <D-<>       :tabedit ~/.vimrc<CR>
@@ -71,7 +71,7 @@ map <leader>rf :FufRenewCache<CR>
 
 " Command-T
 map <D-N>       :CommandTFlush<CR>:CommandT<CR>
-map <leader>f   :CommandTFlush<CR>:CommandT<CR>
+map <silent><leader>f   :CommandTFlush<CR>:CommandT<CR>
 
 " Git blame
 map <leader>gb   :Gblame<CR>
