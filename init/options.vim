@@ -68,6 +68,9 @@ autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or M
 
 let g:gitgutter_enabled = 0
 
+" use escape to cancel command-t
+let g:CommandTCancelMap=['<ESC>','<C-c>']
+
 " Turn off ri tooltips that don't work with Ruby 1.9 yet
 " http://code.google.com/p/macvim/issues/detail?id=342
 if has("gui_running")
