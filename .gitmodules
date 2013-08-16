@@ -129,3 +129,6 @@
 	path = bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
 	branch = master
+[submodule "bundle/vim-puppet"]
+	path = bundle/vim-puppet
+	url = git://github.com/rodjek/vim-puppet.git
