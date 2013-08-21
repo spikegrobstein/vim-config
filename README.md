@@ -12,7 +12,7 @@ and can be run in gvim or over an ssh session and has tmux support.
 
 (Re)move ~/.vim and ~/.vimrc if you have them already, and run:
 
-    git clone git://github.com/spikegrobstein/vim-config-new.git ~/.vim
+    git clone git://github.com/spikegrobstein/vim-config.git ~/.vim
     cd ~/.vim
     git submodule update --init
     ln -s ~/.vim/vimrc ~/.vimrc
