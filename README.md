@@ -1,9 +1,10 @@
-This is my personal fork of the pivotal vim config. It's got a couple extra plugins
-and some tweaks off the upstream's default configuration. Some cruft has been removed, too.
+# vim-config
 
-I'll try to keep it up to date.
+This is heavily based on the Pivotal `vim-config`. Previously it existed as a fork, but it's not only
+diverged incredibly far, but also has different goals, so I broke it into its own repository.
 
-# To Install
+## To Install
+
 (Re)move ~/.vim and ~/.vimrc if you have them already, and run:
 
     git clone git://github.com/spikegrobstein/vim-config.git ~/.vim
@@ -11,18 +12,19 @@ I'll try to keep it up to date.
     git submodule update --init
     ln -s ~/.vim/vimrc ~/.vimrc
 
-# tmux support (optional)
-If you will be using VIM with tmux for remote pairing or window management, 
-see the README at [https://github.com/pivotal/tmux-config](https://github.com/pivotal/tmux-config)
-    
-# Compile command-t
+## tmux support (optional)
+
+This contains a base `tmux.conf`, but you might want to use your own.
+
+## Compile command-t
 
     rvm system #ensure build on Ruby 1.8.7 if using RVM
     cd ~/.vim/bundle/command-t
     bundle
     rake make
 
-# Updating
+## Updating
+
 As long as your checkout is kept clean, you can easily update, rebase your local changes and update submodules with:
 
     cd ~/.vim && git pull --rebase ; git submodule update ; cd -
