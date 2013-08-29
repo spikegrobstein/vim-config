@@ -80,3 +80,6 @@ endif
 if has('mouse_sgr')
     set ttymouse=sgr
 endif
+
+" filetype specific tab settings
+au FileType go,perl,make setl tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab nolist
