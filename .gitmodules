@@ -141,3 +141,6 @@
 [submodule "bundle/nginx-vim-syntax"]
 	path = bundle/nginx-vim-syntax
 	url = https://github.com/evanmiller/nginx-vim-syntax.git
+[submodule "bundle/vim-bats"]
+	path = bundle/vim-bats
+	url = git://github.com/markcornick/vim-bats.git
