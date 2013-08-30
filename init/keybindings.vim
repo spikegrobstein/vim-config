@@ -110,3 +110,8 @@ map <leader>u :GundoToggle<CR>
 
 " vim-gitgutter toggle
 map <leader>gg :GitGutterToggle<CR>
+
+" paste toggling.
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+
