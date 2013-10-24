@@ -70,8 +70,7 @@ vmap <s-tab> <gv
 map <leader>rf :FufRenewCache<CR>
 
 " Command-T
-map <D-N>       :CommandTFlush<CR>:CommandT<CR>
-map <silent><leader>f   :CommandTFlush<CR>:CommandT<CR>
+map <silent><leader>f   :CtrlP<CR>
 
 " Git blame
 map <leader>gb   :Gblame<CR>
