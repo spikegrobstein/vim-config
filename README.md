@@ -17,13 +17,6 @@ and can be run in gvim or over an ssh session and has tmux support.
     git submodule update --init
     ln -s ~/.vim/vimrc ~/.vimrc
 
-### Compile command-t
-
-    rvm system #ensure build on Ruby 1.8.7 if using RVM
-    cd ~/.vim/bundle/command-t
-    bundle
-    rake make
-
 ### tmux support (optional)
 
 This contains a base `tmux.conf`, but you might want to use your own.
