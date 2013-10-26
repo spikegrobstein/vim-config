@@ -1,12 +1,13 @@
 # vim-config
 
-This is heavily based on the Pivotal `vim-config`. Previously it existed as a fork, but it's not only
+This is heavily based on `pivotalcommon/vim-config`. Previously it existed as a fork, but it's not only
 diverged incredibly far, but also has different goals, so I broke it into its own repository.
 
-All plugins exist as submodules, so be sure to follow the installation directions that follow.
+All plugins exist as submodules, so be sure to follow the installation directions in this document.
 
 As far as I know, this config will work on OSX, supports the mouse in iTerm (even on large (27") monitors),
-and can be run in gvim or over an ssh session and has tmux support.
+and can be run in gvim or over an ssh session on linux and has tmux support. I've used it on Ubuntu and CentOS
+servers and have not noticed any differences.
 
 ## To Install
 
