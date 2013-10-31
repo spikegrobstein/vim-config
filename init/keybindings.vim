@@ -28,6 +28,8 @@ nmap <C-l>      <C-w>l
 map <leader>t   :tabedit<CR>
 nmap <C-t>      :tabedit<CR>
 
+map <leader>x   :tabclose<CR>
+
 " create new tab and launch command-T
 map <silent> <leader>T   <leader>t<leader>f
 " create new split and launch command-T
