@@ -81,5 +81,9 @@ if has('mouse_sgr')
     set ttymouse=sgr
 endif
 
-" filetype specific tab settings
+" filetype specific options
+" for go, perl, make, use 4-space real tabs
 au FileType go,perl,make setl tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab nolist
+
+" for markdown, softwrap
+au FileType markdown setl wrap
