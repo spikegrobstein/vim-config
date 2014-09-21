@@ -36,18 +36,18 @@
 	ignore = dirty
 [submodule "bundle/ack.vim"]
 	path = bundle/ack.vim
-	url = https://github.com/mileszs/ack.vim.git
+	url = git://github.com/mileszs/ack.vim.git
 	ignore = dirty
 [submodule "bundle/vim-abolish"]
 	path = bundle/vim-abolish
-	url = https://github.com/tpope/vim-abolish.git
+	url = git://github.com/tpope/vim-abolish.git
 	ignore = dirty
 [submodule "bundle/vim-git-pair"]
 	path = bundle/vim-git-pair
-	url = https://github.com/Peeja/vim-git-pair.git
+	url = git://github.com/Peeja/vim-git-pair.git
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
+	url = git://github.com/pangloss/vim-javascript.git
 	ignore = dirty
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
@@ -55,31 +55,31 @@
 	ignore = dirty
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
+	url = git://github.com/tpope/vim-fugitive.git
 	ignore = dirty
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
-	url = https://github.com/plasticboy/vim-markdown.git
+	url = git://github.com/plasticboy/vim-markdown.git
 	ignore = dirty
 [submodule "bundle/vim-ruby-refactoring"]
 	path = bundle/vim-ruby-refactoring
-	url = https://github.com/ecomba/vim-ruby-refactoring.git
+	url = git://github.com/ecomba/vim-ruby-refactoring.git
 	ignore = dirty
 [submodule "bundle/vim-textobj-rubyblock"]
 	path = bundle/vim-textobj-rubyblock
-	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
+	url = git://github.com/nelstrom/vim-textobj-rubyblock.git
 	ignore = dirty
 [submodule "bundle/vim-textobj-user"]
 	path = bundle/vim-textobj-user
-	url = https://github.com/kana/vim-textobj-user.git
+	url = git://github.com/kana/vim-textobj-user.git
 	ignore = dirty
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
-	url = https://github.com/tpope/vim-unimpaired.git
+	url = git://github.com/tpope/vim-unimpaired.git
 	ignore = dirty
 [submodule "bundle/vim-irblack"]
 	path = bundle/vim-irblack
-	url = https://github.com/wgibbs/vim-irblack.git
+	url = git://github.com/wgibbs/vim-irblack.git
 	ignore = dirty
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
@@ -90,10 +90,10 @@
 	url = git://github.com/slim-template/vim-slim.git
 [submodule "bundle/gundo"]
 	path = bundle/gundo
-	url = https://github.com/sjl/gundo.vim.git
+	url = git://github.com/sjl/gundo.vim.git
 [submodule "bundle/tabular"]
 	path = bundle/tabular
-	url = https://github.com/godlygeek/tabular
+	url = git://github.com/godlygeek/tabular
 [submodule "bundle/cucumbertables/ftplugin"]
 	path = bundle/cucumbertables/ftplugin
 	url = git://gist.github.com/1486660.git
@@ -105,44 +105,44 @@
 	url = git://github.com/pivotal/tmux-config.git
 [submodule "bundle/vim-tomorrow-theme"]
 	path = bundle/vim-tomorrow-theme
-	url = https://github.com/chriskempson/vim-tomorrow-theme.git
+	url = git://github.com/chriskempson/vim-tomorrow-theme.git
 [submodule "bundle/ag.vim"]
 	path = bundle/ag.vim
-	url = https://github.com/epmatsw/ag.vim.git
+	url = git://github.com/epmatsw/ag.vim.git
 [submodule "bundle/vim-coffee-script"]
 	path = bundle/vim-coffee-script
-	url = https://github.com/kchmck/vim-coffee-script.git
+	url = git://github.com/kchmck/vim-coffee-script.git
 [submodule "bundle/hammer.vim"]
 	path = bundle/hammer.vim
-	url = https://github.com/matthias-guenther/hammer.vim.git
+	url = git://github.com/matthias-guenther/hammer.vim.git
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter
+	url = git://github.com/airblade/vim-gitgutter
 [submodule "bundle/taskpaper.vim"]
 	path = bundle/taskpaper.vim
-	url = https://github.com/davidoc/taskpaper.vim.git
+	url = git://github.com/davidoc/taskpaper.vim.git
 [submodule "bundle/vim-elixir"]
 	path = bundle/vim-elixir
-	url = https://github.com/elixir-lang/vim-elixir.git
+	url = git://github.com/elixir-lang/vim-elixir.git
 	branch = master
 [submodule "bundle/vim-puppet"]
 	path = bundle/vim-puppet
 	url = git://github.com/rodjek/vim-puppet.git
 [submodule "bundle/dockerfile.vim"]
 	path = bundle/dockerfile.vim
-	url = https://github.com/honza/dockerfile.vim.git
+	url = git://github.com/honza/dockerfile.vim.git
 [submodule "bundle/vim-golang"]
 	path = bundle/vim-golang
-	url = https://github.com/jnwhiteh/vim-golang.git
+	url = git://github.com/jnwhiteh/vim-golang.git
 [submodule "bundle/nginx-vim-syntax"]
 	path = bundle/nginx-vim-syntax
-	url = https://github.com/evanmiller/nginx-vim-syntax.git
+	url = git://github.com/evanmiller/nginx-vim-syntax.git
 [submodule "bundle/vim-bats"]
 	path = bundle/vim-bats
 	url = git://github.com/markcornick/vim-bats.git
 [submodule "bundle/vcscommand.vim"]
 	path = bundle/vcscommand.vim
-	url = https://github.com/vim-scripts/vcscommand.vim.git
+	url = git://github.com/vim-scripts/vcscommand.vim.git
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
+	url = git://github.com/kien/ctrlp.vim.git
