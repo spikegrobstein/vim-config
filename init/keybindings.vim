@@ -116,3 +116,5 @@ map <leader>gg :GitGutterToggle<CR>
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 
+" set nolist quick
+map <leader>	 :set nolist<CR>
