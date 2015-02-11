@@ -19,6 +19,7 @@ set wildignore+=tags               " Ignore tags when globbing.
 set wildignore+=tmp/**             " ...Also tmp files.
 set wildignore+=public/uploads/**  " ...Also uploads.
 set wildignore+=public/images/**   " ...Also images.
+set wildignore+=node_modules    " ...Also node_modules
 
 set list                        " Show whitespace
 if has("gui_running")
