@@ -89,8 +89,8 @@ au FileType go,perl,make setl tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab n
 " Indentation guides configuration
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
-" let g:indent_guides_start_level = 1
+let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=black   ctermbg=234
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=black   ctermbg=236
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgray ctermbg=235
 
