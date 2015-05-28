@@ -9,6 +9,7 @@ map Y           y$
 
 " Split screen
 map <leader>v   :vsp<CR>
+map <leader>-   :sp<CR>
 
 " Move between screens
 nmap <C-j>      <C-w>j
