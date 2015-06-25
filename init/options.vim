@@ -21,6 +21,15 @@ set wildignore+=public/uploads/**  " ...Also uploads.
 set wildignore+=public/images/**   " ...Also images.
 set wildignore+=node_modules    " ...Also node_modules
 
+" fzf support (https://github.com/junegunn/fzf)
+if executable("fzf")
+  if isdirectory("/usr/local/Cellar/fzf/HEAD")
+    set rtp+=/usr/local/Cellar/fzf/HEAD
+  elseif isdirectory("~/.fzf")
+    set rtp+=~/.fzf
+  endif
+endif
+
 set list                        " Show whitespace
 if has("gui_running")
   set listchars=trail:·

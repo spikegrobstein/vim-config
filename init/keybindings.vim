@@ -65,8 +65,12 @@ vmap <s-tab> <gv
 " refresh the FuzzyFinder cache
 map <leader>rf :FufRenewCache<CR>
 
-" Command-T
-map <silent><leader>f   :CtrlP<CR>
+" CtrlP / fzf
+if executable("fzf")
+  map <silent><leader>f  :FZF -x<CR>
+else
+  map <silent><leader>f   :CtrlP<CR>
+endif
 
 " Git blame
 map <leader>gb   :Gblame<CR>
