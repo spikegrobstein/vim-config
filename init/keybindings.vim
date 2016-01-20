@@ -116,3 +116,7 @@ set pastetoggle=<F2>
 
 " set nolist quick
 map <leader>	 :set nolist<CR>
+
+" jsdoc shortcut
+nmap <leader>d <Plug>(jsdoc)
+
