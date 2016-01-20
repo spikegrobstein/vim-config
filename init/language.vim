@@ -25,7 +25,7 @@ au BufRead,BufNewFile Vagrantfile set filetype=ruby
 au BufRead,BufNewFile soloistrc set filetype=ruby
 
 " Highlight JSON files as javascript
-autocmd BufRead,BufNewFile *.json set filetype=javascript
+autocmd BufRead,BufNewFile *.json set filetype=json
 
 " Highlight Jasmine fixture files as HTML
 autocmd BufRead,BufNewFile *.jasmine_fixture set filetype=html
