@@ -103,3 +103,6 @@ let g:indent_guides_guide_size = 1
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=black   ctermbg=236
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgray ctermbg=235
 
+" disable concealing of quotes in json files
+let g:vim_json_syntax_conceal = 0
+

@@ -155,3 +155,6 @@
 [submodule "bundle/vim-jsdoc"]
 	path = bundle/vim-jsdoc
 	url = git@github.com:heavenshell/vim-jsdoc.git
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = git@github.com:elzr/vim-json.git
