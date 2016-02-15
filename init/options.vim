@@ -106,3 +106,6 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgray ctermbg=235
 " disable concealing of quotes in json files
 let g:vim_json_syntax_conceal = 0
 
+" ensure that freshly opened markdown files are not folded
+let g:vim_markdown_folding_disabled = 1
+
