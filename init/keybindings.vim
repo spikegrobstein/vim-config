@@ -40,7 +40,7 @@ map <D-z>       :earlier 1<CR>
 map <D-Z>       :later 1<CR>
 
 " Auto-indent whole file
-nmap <leader>=  gg=G``
+" nmap <leader>=  gg=G``
 map <silent> <F7> gg=G``:echo "Reformatted."<CR>
 
 " Jump to a new line in insert mode
