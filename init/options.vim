@@ -30,7 +30,9 @@ if executable("fzf")
   endif
 endif
 
-set list                        " Show whitespace
+" make extraneous whitespace so, so pretty
+set list listchars=tab:▸\ ,trail:·,precedes:←,extends:→
+
 if has("gui_running")
   set listchars=trail:·
 else
