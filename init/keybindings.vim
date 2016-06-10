@@ -12,11 +12,14 @@ map <leader>v   :vsp<CR>
 map <leader>-   :sp<CR>
 
 " Move between screens
-nmap <C-j>      <C-w>j
-nmap <C-k>      <C-w>k
+" nmap <C-j>      <C-w>j
+" nmap <C-k>      <C-w>k
 nmap <C-h>      <C-w>h
 nmap <C-l>      <C-w>l
-map <leader>=   <C-w>=
+" map <leader>=   <C-w>=
+
+" YouCompleteMe bindings
+nmap <C-j> <
 
 " Create a new tab
 map <leader>t   :tabedit<CR>
