@@ -112,6 +112,6 @@ let g:vim_json_syntax_conceal = 0
 let g:vim_markdown_folding_disabled = 1
 
 " YouCompleteMe
-let g:ycm_key_list_select_completion = ['<TAB>', '<C-j>', '<Down>', '<Enter>']
+let g:ycm_key_list_select_completion = ['<TAB>', '<C-j>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>' ]
 
