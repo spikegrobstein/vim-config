@@ -15,7 +15,7 @@ servers and have not noticed any differences.
 
     git clone git://github.com/spikegrobstein/vim-config.git ~/.vim
     cd ~/.vim
-    git submodule update --init
+    git submodule update --init --recursive
     ln -s ~/.vim/vimrc ~/.vimrc
 
 ### tmux support (optional)
