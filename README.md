@@ -17,6 +17,8 @@ servers and have not noticed any differences.
     cd ~/.vim
     git submodule update --init --recursive
     ln -s ~/.vim/vimrc ~/.vimrc
+    cd bundle/youcompleteme
+    ./install.py --clang-completer --tern-completer --gocode-completer
 
 ### tmux support (optional)
 
