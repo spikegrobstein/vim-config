@@ -25,7 +25,8 @@ set wildignore+=node_modules    " ...Also node_modules
 if executable("fzf")
   if isdirectory("/usr/local/Cellar/fzf/HEAD")
     set rtp+=/usr/local/Cellar/fzf/HEAD
-  elseif isdirectory("~/.fzf")
+  elseif isdirectory(expand("~/.fzf"))
+    let fzfenabled="homedir"
     set rtp+=~/.fzf
   endif
 endif
