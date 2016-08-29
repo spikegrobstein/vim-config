@@ -21,6 +21,8 @@ set wildignore+=public/uploads/**  " ...Also uploads.
 set wildignore+=public/images/**   " ...Also images.
 set wildignore+=node_modules    " ...Also node_modules
 
+set colorcolumn=110 "draw a vertical bar at 110 columns (110 is a bit wider than 80, but not too wide)
+
 " fzf support (https://github.com/junegunn/fzf)
 if executable("fzf")
   if isdirectory("/usr/local/Cellar/fzf/HEAD")
