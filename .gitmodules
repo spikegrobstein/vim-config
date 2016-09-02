@@ -161,3 +161,6 @@
 [submodule "bundle/jq.vim"]
 	path = bundle/jq.vim
 	url = git@github.com:vito-c/jq.vim.git
+[submodule "bundle/deoplete"]
+	path = bundle/deoplete
+	url = https://github.com/Shougo/deoplete.nvim.git
