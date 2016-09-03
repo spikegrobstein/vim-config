@@ -50,6 +50,7 @@ Plug 'vim-scripts/molokai'
 Plug 'vim-scripts/vcscommand.vim'
 Plug 'vito-c/jq.vim'
 Plug 'wgibbs/vim-irblack'
+Plug 'Townk/vim-autoclose'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim'
