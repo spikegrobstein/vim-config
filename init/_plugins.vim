@@ -35,7 +35,6 @@ Plug 'tpope/vim-vividchalk'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/vcscommand.vim'
 Plug 'vito-c/jq.vim'
-Plug 'wgibbs/vim-irblack'
 Plug 'Townk/vim-autoclose'
 
 if has('nvim')
