@@ -34,8 +34,5 @@ autocmd BufRead,BufNewFile *.jasmine_fixture set filetype=html
 autocmd FileType ruby set iskeyword=@,48-57,_,?,!,192-255
 autocmd FileType scss set iskeyword=@,48-57,_,-,?,!,192-255
 
-" Insert ' => '
-autocmd FileType ruby imap  <Space>=><Space>
-
 " Open all folds in Markdown.
 autocmd FileType mkd normal zR
