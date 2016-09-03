@@ -1,28 +1,51 @@
 # vim-config
 
-This is heavily based on `pivotalcommon/vim-config`. Previously it existed as a fork, but it's not only
+This was heavily based on `pivotalcommon/vim-config`. Previously it existed as a fork, but it's not only
 diverged incredibly far, but also has different goals, so I broke it into its own repository.
 
-All plugins exist as submodules, so be sure to follow the installation directions in this document.
+This uses [vim-plug](https://github.com/junegunn/vim-plug) to manage plugins, and will attempt to install them
+by default on the first launch. It does this by checking for the existence of the `plugins` directory in your
+vim config directory.
 
-As far as I know, this config will work on OSX, supports the mouse in iTerm (even on large (27") monitors),
-and can be run in gvim or over an ssh session on linux and has tmux support. I've used it on Ubuntu and CentOS
-servers and have not noticed any differences.
+This repository also attempts to support both vim and neovim on Linux, OSX and \*BSD.
 
-## To Install
+## To Install (neovim)
+
+    mkdir -p ~/.config
+    git clone https://github.com/spikegrobstein/vim-config.git ~/.config/nvim
+
+Then, start up `nvim`. Then run:
+
+    :UpdateRemotePlugins
+
+This will ensure that deoplete is configured. Quit and re-launch `nvim`.
+
+## To Install (vim)
 
 (Re)move ~/.vim and ~/.vimrc if you have them already, and run:
 
-    git clone git://github.com/spikegrobstein/vim-config.git ~/.vim
-    cd ~/.vim
-    git submodule update --init --recursive
+    git clone https://github.com/spikegrobstein/vim-config.git ~/.vim
     ln -s ~/.vim/vimrc ~/.vimrc
-    cd bundle/youcompleteme
-    ./install.py --clang-completer --tern-completer --gocode-completer
 
-### tmux support (optional)
+Then start up `vim` and you're good to go. (there does appear to be some issues with vim compatibility at this time)
 
-This contains a base `tmux.conf`, but you might want to use your own.
+## Updating (neovim)
+
+Updating is relatively straightforward:
+
+    cd ~/.config/nvim
+    git pull --rebase
+
+Then launch `nvim` and run `PlugInstall`.
+
+## Updating (vim)
+
+Updating is relatively straightforward:
+
+    cd ~/.vim
+    git pull --rebase
+
+Then launch `vim` and run `PlugInstall`.
 
 ### FZF support
 
@@ -42,11 +65,4 @@ if you use `ag`, you can (optionally) add the following line to your `~/.bash_pr
 
 that will use `ag` to list the files and ignore files/directories that are in your `.gitignore`. `ag` can also
 be installed with brew as `the_silver_searcher`.
-
-
-## Updating
-
-As long as your checkout is kept clean, you can easily update, rebase your local changes and update submodules with:
-
-    cd ~/.vim && git pull --rebase ; git submodule update ; cd -
 
