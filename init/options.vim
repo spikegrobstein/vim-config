@@ -22,7 +22,7 @@ set wildignore+=public/images/**   " ...Also images.
 set wildignore+=node_modules    " ...Also node_modules
 
 " draw the right-column and fill it in
-execute "set colorcolumn=" . join(range(110,335), ',')
+execute "set colorcolumn=" . join(range(80,110), ',')
 
 " fzf support (https://github.com/junegunn/fzf)
 if executable("fzf")
@@ -76,7 +76,7 @@ set backupdir=~/.vim-tmp,~/tmp,/var/tmp,/tmp
 set hls                         " search with highlights by default
 " Press Space to turn off highlighting and clear any message already
 " displayed.
-nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>""
+nnoremap <silent> <leader><leader> :nohlsearch<Bar>:echo<CR>""
 
 " Write all writeable buffers when changing buffers or losing focus.
 " set autowriteall                " Save when doing various buffer-switching things.

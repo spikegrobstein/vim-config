@@ -1,7 +1,7 @@
 " Keybindings
 " -----------
 
-let mapleader = ","
+let mapleader = " "
 let maplocalleader = ";"
 
 if has("nvim")
