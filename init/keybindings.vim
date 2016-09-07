@@ -127,3 +127,7 @@ map <leader>	 :set nolist<CR>
 " jsdoc shortcut
 nmap <leader>d <Plug>(jsdoc)
 
+" Movement within 'ins-completion-menu'
+imap <expr><C-j>   pumvisible() ? "\<C-n>" : "\<C-j>"
+imap <expr><C-k>   pumvisible() ? "\<C-p>" : "\<C-k>"" " "
+
