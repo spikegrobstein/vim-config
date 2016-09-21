@@ -82,10 +82,8 @@ endif
 " Git blame
 map <leader>gb   :Gblame<CR>
 
-" Comment/uncomment lines
-map <leader>/   <plug>NERDCommenterToggle
-map <D-/>       <plug>NERDCommenterToggle
-imap <D-/>      <Esc><plug>NERDCommenterToggle i
+" Comment/uncomment lines with ^/ (vim registers ^/ as <C-_>
+map <C-_>   <plug>NERDCommenterToggle
 
 " In command-line mode, <C-A> should go to the front of the line, as in bash.
 cmap <C-A> <C-B>
