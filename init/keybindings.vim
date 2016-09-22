@@ -30,6 +30,7 @@ map <leader>t   :tabedit<CR>
 nmap <C-t>      :tabedit<CR>
 
 map <leader>x   :tabclose<CR>
+map <C-x>   :tabclose<CR>
 
 " create new tab and launch command-T
 map <silent> <leader>T   <leader>t<leader>f
