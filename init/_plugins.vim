@@ -37,6 +37,8 @@ Plug 'vim-scripts/vcscommand.vim'
 Plug 'vito-c/jq.vim'
 Plug 'Townk/vim-autoclose'
 
+Plug 'lepture/vim-jinja'
+
 if has('nvim')
   Plug 'Shougo/deoplete.nvim'
 endif
