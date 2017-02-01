@@ -28,6 +28,8 @@ Plug 'Townk/vim-autoclose'
 Plug 'sheerun/vim-polyglot' " install most major language syntax plugins
 Plug 'lepture/vim-jinja'
 
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
 if has('nvim')
   Plug 'Shougo/deoplete.nvim'
 endif
