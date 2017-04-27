@@ -30,6 +30,8 @@ Plug 'lepture/vim-jinja'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
+Plug 'christoomey/vim-tmux-navigator'
+
 if has('nvim')
   Plug 'Shougo/deoplete.nvim'
 endif
