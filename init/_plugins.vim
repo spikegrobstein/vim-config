@@ -31,6 +31,7 @@ Plug 'lepture/vim-jinja'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'ekalinin/Dockerfile.vim'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim'
