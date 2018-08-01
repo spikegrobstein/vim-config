@@ -33,6 +33,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ekalinin/Dockerfile.vim'
 
+Plug 'maxbane/vim-asm_ca65'
+
 if has('nvim')
   Plug 'Shougo/deoplete.nvim'
 endif
