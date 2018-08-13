@@ -29,6 +29,7 @@ Plug 'sheerun/vim-polyglot' " install most major language syntax plugins
 Plug 'lepture/vim-jinja'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ekalinin/Dockerfile.vim'
