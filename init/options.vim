@@ -123,3 +123,10 @@ let g:deoplete#enable_at_startup = 1
 " fix slow vim with vue files
 let g:vue_disable_pre_processors = 1
 
+" make it so that :W doesn't do anything weird.
+fun! SetupCommandAlias(from, to)
+  exec 'cnoreabbrev <expr> '.a:from
+        \ .' ((getcmdtype() is# ":" && getcmdline() is# "'.a:from.'")'
+        \ .'? ("'.a:to.'") : ("'.a:from.'"))'
+endfun
+call SetupCommandAlias("W","w")
