@@ -39,7 +39,7 @@ Plug 'maxbane/vim-asm_ca65'
 Plug 'bfontaine/Brewfile.vim'
 
 if has('nvim')
-  Plug 'Shougo/deoplete.nvim'
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 endif
 
 call plug#end()
