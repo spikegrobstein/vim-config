@@ -7,6 +7,14 @@
 ## with the primary repo, then execute a command to update all of the plugins
 ## and update remote plugins
 ##
+## Usage:
+##
+## ./update.sh [ <vim-cmd> ]
+##
+## <vim-cmd> is used when calling out to vim to update plugins.
+##           it defaults to 'nvim', so if you're using 'vim' or some other
+##           name for your vim executable, include that here or set VIM_CMD
+##           environment variable to override the default.
 
 set -euo pipefail
 IFS=$'\n\t'
@@ -56,10 +64,16 @@ e::debug() {
 
 ## Start script:
 
+# get the vim command that we're gonna use
+default_vim="${VIM_CMD:-nvim}"
+vim="${1:-"$default_vim"}"
+
 scriptpath="$( realpath "$0" )"
 scriptdir="$( dirname "$scriptpath" )"
 
 pushd "$scriptdir"
+
+e::info "Using '$vim' as vim command."
 
 if ! git pull --rebase; then
   e::error \
@@ -69,13 +83,13 @@ fi
 
 e::info "Updating Plug..."
 
-nvim \
+"$vim" \
   +PlugUpgrade \
   +qa
 
 e::info "Updating plugins..."
 
-nvim \
+"$vim" \
   +PlugInstall \
   +PlugUpdate \
   +UpdateRemotePlugins \
