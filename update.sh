@@ -81,6 +81,36 @@ if ! git pull --rebase; then
     "See above output for details."
 fi
 
+if [[ "$vim" = 'nvim' ]]; then
+  e::info "Updating neovim python support"
+
+  if which "pip2" &> /dev/null; then
+    e::info "Updating pip2 neovim modules..."
+
+    pip2 install --upgrade pynvim
+    pip2 install --upgrade neovim
+  fi
+
+  if which "pip3" &> /dev/null; then
+    e::info "Updating pip3 neovim modules..."
+
+    pip3 install --upgrade pynvim
+    pip3 install --upgrade neovim
+  fi
+
+  if which "gem" &> /dev/null; then
+    e::info "Updating ruby neovim gem..."
+
+    gem install neovim
+  fi
+
+  if which "npm" &> /dev/null; then
+    e::info "Updating node neovim npm module..."
+
+    npm install -g neovim
+  fi
+fi
+
 e::info "Updating Plug..."
 
 "$vim" \
