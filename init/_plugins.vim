@@ -38,6 +38,11 @@ Plug 'maxbane/vim-asm_ca65'
 
 Plug 'bfontaine/Brewfile.vim'
 
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 endif

@@ -130,3 +130,12 @@ fun! SetupCommandAlias(from, to)
         \ .'? ("'.a:to.'") : ("'.a:from.'"))'
 endfun
 call SetupCommandAlias("W","w")
+
+" configure python for macOS
+if filereadable("/usr/local/bin/python3")
+  let g:python3_host_prog = '/usr/local/bin/python3'
+endif
+
+if filereadable("/usr/local/bin/python2")
+  let g:python2_host_prog = '/usr/local/bin/python2'
+endif
