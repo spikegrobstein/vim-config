@@ -1,3 +1,4 @@
 .netrwhist
 doc/tags
 /plugins
+autoload/plug.vim.old
