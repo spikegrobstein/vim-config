@@ -4,7 +4,8 @@ set hidden
 let g:LanguageClient_serverCommands = {
     \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
     \ 'sh': ['bash-language-server', 'start'],
-    \ 'elixir': ['elixir-ls']
+    \ 'elixir': ['elixir-ls'],
+    \ 'dockerfile': ['docker-langserver', '--stdio']
     \ }
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
