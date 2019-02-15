@@ -32,7 +32,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'ekalinin/Dockerfile.vim'
 
 Plug 'maxbane/vim-asm_ca65'
 
