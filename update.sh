@@ -101,7 +101,7 @@ if [[ "$vim" = 'nvim' ]]; then
   if which "gem" &> /dev/null; then
     e::info "Updating ruby neovim gem..."
 
-    gem install neovim
+    sudo gem install neovim
   fi
 
   if which "npm" &> /dev/null; then
