@@ -2,7 +2,9 @@
 set hidden
 
 let g:LanguageClient_serverCommands = {
-    \ 'sh': ['bash-language-server', 'start']
+    \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+    \ 'sh': ['bash-language-server', 'start'],
+    \ 'elixir': ['elixir-ls']
     \ }
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
