@@ -37,6 +37,8 @@ Plug 'maxbane/vim-asm_ca65'
 
 Plug 'bfontaine/Brewfile.vim'
 
+Plug 'lifepillar/vim-solarized8'
+
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
