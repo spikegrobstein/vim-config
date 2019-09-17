@@ -6,7 +6,7 @@ let g:LanguageClient_serverCommands = {
     \ 'sh': ['bash-language-server', 'start'],
     \ 'elixir': ['elixir-ls'],
     \ 'dockerfile': ['docker-langserver', '--stdio'],
-    \ 'c': ['cquery']
+    \ 'c': ['cquery'],
     \ 'typescript': ['javascript-typescript-stdio'],
     \ }
 
