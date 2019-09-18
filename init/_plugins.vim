@@ -38,6 +38,11 @@ Plug 'maxbane/vim-asm_ca65'
 Plug 'bfontaine/Brewfile.vim'
 
 Plug 'lifepillar/vim-solarized8'
+Plug 'morhetz/gruvbox'
+Plug 'fcpg/vim-orbital'
+Plug 'liuchengxu/space-vim-dark'
+Plug 'cseelus/vim-colors-lucid'
+Plug 'Rigellute/shades-of-purple.vim'
 
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',

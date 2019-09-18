@@ -108,8 +108,8 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#335e69 ctermbg=236
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#113c47 ctermbg=235
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#616161 ctermbg=236
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#393939 ctermbg=235
 
 " disable concealing of quotes in json files
 let g:vim_json_syntax_conceal = 0
