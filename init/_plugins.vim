@@ -32,11 +32,28 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'ekalinin/Dockerfile.vim'
 
 Plug 'maxbane/vim-asm_ca65'
 
 Plug 'bfontaine/Brewfile.vim'
+
+Plug 'lifepillar/vim-solarized8'
+Plug 'morhetz/gruvbox'
+Plug 'fcpg/vim-orbital'
+Plug 'liuchengxu/space-vim-dark'
+Plug 'cseelus/vim-colors-lucid'
+Plug 'Rigellute/shades-of-purple.vim'
+
+Plug 'camspiers/animate.vim'
+Plug 'camspiers/lens.vim'
+
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
