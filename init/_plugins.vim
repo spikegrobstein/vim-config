@@ -44,7 +44,6 @@ Plug 'liuchengxu/space-vim-dark'
 Plug 'cseelus/vim-colors-lucid'
 Plug 'Rigellute/shades-of-purple.vim'
 
-Plug 'camspiers/animate.vim'
 Plug 'camspiers/lens.vim'
 
 Plug 'autozimu/LanguageClient-neovim', {
