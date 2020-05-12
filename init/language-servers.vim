@@ -8,6 +8,7 @@ let g:LanguageClient_serverCommands = {
     \ 'dockerfile': ['docker-langserver', '--stdio'],
     \ 'c': ['cquery'],
     \ 'typescript': ['javascript-typescript-stdio'],
+    \ 'swift': ['xcrun', 'sourcekit-lsp']
     \ }
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
