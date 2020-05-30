@@ -37,12 +37,6 @@ endif
 " make extraneous whitespace so, so pretty
 set listchars=tab:▸\ ,trail:·,precedes:←,extends:→
 
-if has("gui_running")
-  set listchars=trail:·
-else
-  set listchars=trail:~
-endif
-
 set showmatch                   " Show matching brackets
 set hidden                      " Allow hidden, unsaved buffers
 set splitright                  " Add new windows towards the right
