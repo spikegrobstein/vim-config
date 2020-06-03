@@ -61,8 +61,9 @@ You can install `fzf` with the following command:
 
 if you use `ag`, you can (optionally) add the following line to your `~/.bash_profile`:
 
-    export FZF_DEFAULT_COMMAND='ag -l -g ""'
+    export FZF_DEFAULT_COMMAND='ag -l --hidden --ignore .git -g ""'
 
-that will use `ag` to list the files and ignore files/directories that are in your `.gitignore`. `ag` can also
-be installed with brew as `the_silver_searcher`.
+that will use `ag` to list the files and ignore files/directories that are in your `.gitignore` as well as the `.git` directory, but will still list other invisible files.
+
+`ag` can be installed with brew as `the_silver_searcher`.
 
