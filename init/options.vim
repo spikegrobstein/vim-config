@@ -77,7 +77,7 @@ nnoremap <silent> <leader><leader> :nohlsearch<Bar>:echo<CR>""
 " set autowriteall                " Save when doing various buffer-switching things.
 " autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or MacVim loses focus.
 
-let g:gitgutter_enabled = 0
+let g:gitgutter_enabled = 1
 
 " use escape to cancel command-t
 let g:CommandTCancelMap=['<ESC>','<C-c>']
