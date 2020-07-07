@@ -35,7 +35,8 @@ if executable("fzf")
 endif
 
 " make extraneous whitespace so, so pretty
-set listchars=tab:▸\ ,trail:·,precedes:←,extends:→
+set listchars=tab:▸\ ,trail:·,precedes:←,extends:→,nbsp:␣
+set list
 
 set showmatch                   " Show matching brackets
 set hidden                      " Allow hidden, unsaved buffers
