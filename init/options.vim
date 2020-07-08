@@ -45,6 +45,7 @@ set splitbelow                  " ... and bottom
 set wildmode=list:longest       " Bash-like tab completion
 set scrolloff=3                 " Scroll when the cursor is 3 lines from edge
 set cursorline                  " Highlight current line
+set updatetime=100
 
 " More detailed status line
 set statusline=[%n]\ %f\ %m\ %y
