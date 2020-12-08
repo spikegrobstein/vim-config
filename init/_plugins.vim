@@ -31,6 +31,8 @@ Plug 'lepture/vim-jinja'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+Plug 'jparise/vim-graphql'
+
 "Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'maxbane/vim-asm_ca65'
