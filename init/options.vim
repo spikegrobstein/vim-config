@@ -26,8 +26,8 @@ execute "set colorcolumn=" . join(range(80,110), ',')
 
 " fzf support (https://github.com/junegunn/fzf)
 if executable("fzf")
-  if isdirectory("/usr/local/Cellar/fzf/HEAD")
-    set rtp+=/usr/local/Cellar/fzf/HEAD
+  if isdirectory("/usr/local/opt/fzf")
+    set rtp+=/usr/local/opt/fzf
   elseif isdirectory(expand("~/.fzf"))
     let fzfenabled="homedir"
     set rtp+=~/.fzf
