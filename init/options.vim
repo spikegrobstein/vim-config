@@ -78,6 +78,7 @@ nnoremap <silent> <leader><leader> :nohlsearch<Bar>:echo<CR>""
 " set autowriteall                " Save when doing various buffer-switching things.
 " autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or MacVim loses focus.
 
+" enable gitgutter
 let g:gitgutter_enabled = 1
 
 " use escape to cancel command-t
@@ -92,10 +93,6 @@ endif
 if has('mouse_sgr')
     set ttymouse=sgr
 endif
-
-" filetype specific options
-" for go, perl, make, use 4-space real tabs
-au FileType go,perl,make setl tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab nolist
 
 " Indentation guides configuration
 let g:indent_guides_enable_on_vim_startup = 1
