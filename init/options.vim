@@ -113,9 +113,6 @@ let g:vim_json_syntax_conceal = 0
 " ensure that freshly opened markdown files are not folded
 let g:vim_markdown_folding_disabled = 1
 
-" deoplete
-let g:deoplete#enable_at_startup = 1
-
 " fix slow vim with vue files
 let g:vue_disable_pre_processors = 1
 
