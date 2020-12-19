@@ -7,7 +7,7 @@ This uses [vim-plug](https://github.com/junegunn/vim-plug) to manage plugins, an
 by default on the first launch. It does this by checking for the existence of the `plugins` directory in your
 vim config directory.
 
-This repository also attempts to support both vim and neovim on Linux, OSX and \*BSD.
+This repository *only support neovim* on Linux, OSX and \*BSD.
 
 ## To Install (neovim)
 
@@ -20,15 +20,6 @@ Then, start up `nvim`. Then run:
 
 This will ensure that deoplete is configured. Quit and re-launch `nvim`.
 
-## To Install (vim)
-
-(Re)move ~/.vim and ~/.vimrc if you have them already, and run:
-
-    git clone https://github.com/spikegrobstein/vim-config.git ~/.vim
-    ln -s ~/.vim/vimrc ~/.vimrc
-
-Then start up `vim` and you're good to go. (there does appear to be some issues with vim compatibility at this time)
-
 ## Updating (neovim)
 
 Updating is relatively straightforward:
@@ -38,14 +29,21 @@ Updating is relatively straightforward:
 
 Then launch `nvim` and run `PlugInstall`.
 
-## Updating (vim)
+## Coc
 
-Updating is relatively straightforward:
+This repo uses `coc.vim`. make sure you have nodeJS set up (preferably 14.x).
 
-    cd ~/.vim
-    git pull --rebase
+You probably want to `:CocInstall` some of the following:
 
-Then launch `vim` and run `PlugInstall`.
+ * `coc-clangd`
+ * `coc-css`
+ * `coc-docker`
+ * `coc-elixir`
+ * `coc-html`
+ * `coc-json`
+ * `coc-rust-analyzer`
+ * `coc-sh`
+ * `coc-tsserver`
 
 ### FZF support
 

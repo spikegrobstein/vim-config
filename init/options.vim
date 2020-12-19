@@ -26,8 +26,8 @@ execute "set colorcolumn=" . join(range(80,110), ',')
 
 " fzf support (https://github.com/junegunn/fzf)
 if executable("fzf")
-  if isdirectory("/usr/local/Cellar/fzf/HEAD")
-    set rtp+=/usr/local/Cellar/fzf/HEAD
+  if isdirectory("/usr/local/opt/fzf")
+    set rtp+=/usr/local/opt/fzf
   elseif isdirectory(expand("~/.fzf"))
     let fzfenabled="homedir"
     set rtp+=~/.fzf
@@ -78,6 +78,7 @@ nnoremap <silent> <leader><leader> :nohlsearch<Bar>:echo<CR>""
 " set autowriteall                " Save when doing various buffer-switching things.
 " autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or MacVim loses focus.
 
+" enable gitgutter
 let g:gitgutter_enabled = 1
 
 " use escape to cancel command-t
@@ -93,12 +94,6 @@ if has('mouse_sgr')
     set ttymouse=sgr
 endif
 
-" filetype specific options
-" for go, perl, make, use 4-space real tabs
-au FileType go,perl,make setl tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab nolist
-
-au FileType gitcommit setl colorcolumn=50,72
-
 " Indentation guides configuration
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
@@ -112,9 +107,6 @@ let g:vim_json_syntax_conceal = 0
 
 " ensure that freshly opened markdown files are not folded
 let g:vim_markdown_folding_disabled = 1
-
-" deoplete
-let g:deoplete#enable_at_startup = 1
 
 " fix slow vim with vue files
 let g:vue_disable_pre_processors = 1
