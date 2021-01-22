@@ -128,3 +128,4 @@ if filereadable("/usr/local/bin/python2")
   let g:python2_host_prog = '/usr/local/bin/python2'
 endif
 
+let g:is_bash=1
