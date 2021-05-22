@@ -129,3 +129,5 @@ if filereadable("/usr/local/bin/python2")
 endif
 
 let g:is_bash=1
+
+let g:indentLine_char_list = ['┆', '┊']

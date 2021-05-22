@@ -10,9 +10,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'epmatsw/ag.vim'
 Plug 'godlygeek/tabular'
 Plug 'heavenshell/vim-jsdoc'
-" Plug 'matthias-guenther/hammer.vim'
 Plug 'mileszs/ack.vim'
-Plug 'nathanaelkane/vim-indent-guides'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
@@ -22,6 +20,8 @@ Plug 'tpope/vim-unimpaired'
 Plug 'vim-scripts/vcscommand.vim'
 Plug 'Townk/vim-autoclose'
 Plug 'camspiers/lens.vim'
+
+Plug 'lukas-reineke/indent-blankline.nvim', {'branch': 'lua'}
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
