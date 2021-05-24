@@ -28,6 +28,7 @@ endif
 " Source initialization files
 " ---------------------------
 
+runtime! plugins.vim
 runtime! init/**.vim
 
 

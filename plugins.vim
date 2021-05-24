@@ -1,8 +1,4 @@
-if has('nvim')
-  call plug#begin('~/.config/nvim/plugins')
-else
-  call plug#begin('~/.vim/plugins')
-endif
+call plug#begin('~/.config/nvim/plugins')
 
 " behaviour plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
