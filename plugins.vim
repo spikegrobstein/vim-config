@@ -1,12 +1,17 @@
 call plug#begin('~/.config/nvim/plugins')
 
+" Treesitter
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+
 " behaviour plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'airblade/vim-gitgutter'
 Plug 'epmatsw/ag.vim'
 Plug 'godlygeek/tabular'
 Plug 'heavenshell/vim-jsdoc'
-Plug 'mileszs/ack.vim'
+" Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
@@ -21,8 +26,8 @@ Plug 'drzel/quakec.vim'
 
 Plug 'lukas-reineke/indent-blankline.nvim'
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -33,7 +38,7 @@ Plug 'junegunn/fzf.vim'
 " syntax plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'sheerun/vim-polyglot' " install most major language syntax plugins
-Plug 'jparise/vim-graphql'
+" Plug 'jparise/vim-graphql'
 Plug 'maxbane/vim-asm_ca65'
 Plug 'bfontaine/Brewfile.vim'
 Plug 'davidoc/taskpaper.vim'
