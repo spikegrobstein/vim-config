@@ -17,6 +17,8 @@ Plug 'vim-scripts/vcscommand.vim'
 Plug 'Townk/vim-autoclose'
 Plug 'camspiers/lens.vim'
 
+Plug 'drzel/quakec.vim'
+
 Plug 'lukas-reineke/indent-blankline.nvim', {'branch': 'lua'}
 
 Plug 'vim-airline/vim-airline'
