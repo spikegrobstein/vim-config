@@ -19,7 +19,7 @@ Plug 'camspiers/lens.vim'
 
 Plug 'drzel/quakec.vim'
 
-Plug 'lukas-reineke/indent-blankline.nvim', {'branch': 'lua'}
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
