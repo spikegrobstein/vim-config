@@ -10,3 +10,4 @@ set background=dark
 colorscheme tokyonight
 highlight colorcolumn guibg=#151122
 
+let g:neosolarized_italic = 0
