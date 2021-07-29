@@ -44,6 +44,8 @@ Plug 'lepture/vim-jinja'
 
 " colorschemes
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'KabbAmine/yowish.vim'
+Plug 'shapeoflambda/dark-purple.vim'
 Plug 'tpope/vim-vividchalk'
 Plug 'altercation/vim-colors-solarized'
 Plug 'lifepillar/vim-solarized8'

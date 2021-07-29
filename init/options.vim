@@ -23,6 +23,7 @@ set wildignore+=node_modules    " ...Also node_modules
 
 " draw the right-column and fill it in
 execute "set colorcolumn=" . join(range(80,110), ',')
+highlight colorcolumn guibg=#1e1e1e
 
 " fzf support (https://github.com/junegunn/fzf)
 if executable("fzf")
