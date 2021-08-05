@@ -4,6 +4,9 @@ if &t_Co == 256
   let g:solarized_termcolors=256
 endif
 
+let g:tokyonight_style = "night"
+
 set background=dark
-colorscheme yowish
+colorscheme tokyonight
+highlight colorcolumn guibg=#151122
 
