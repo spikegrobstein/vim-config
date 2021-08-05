@@ -14,11 +14,11 @@ This repository *only support neovim* on Linux, OSX and \*BSD.
     mkdir -p ~/.config
     git clone https://github.com/spikegrobstein/vim-config.git ~/.config/nvim
 
-Then, start up `nvim`. Then run:
+Then, run:
 
-    :UpdateRemotePlugins
+    nvim +PlugInstall +PlugUpdate +qa
 
-This will ensure that deoplete is configured. Quit and re-launch `nvim`.
+Then start up `nvim`
 
 ## Updating (neovim)
 
@@ -26,12 +26,11 @@ Updating is relatively straightforward:
 
     cd ~/.config/nvim
     git pull --rebase
-
-Then launch `nvim` and run `PlugInstall`.
+    nvim +PlugInstall +PlugUpdate +qa
 
 ## Coc
 
-This repo uses `coc.vim`. make sure you have nodeJS set up (preferably 14.x).
+This repo uses `coc.vim`. make sure you have nodeJS set up (preferably >=14.x).
 
 You probably want to `:CocInstall` some of the following:
 
@@ -45,6 +44,8 @@ You probably want to `:CocInstall` some of the following:
  * `coc-sh`
  * `coc-tsserver`
 
+Periodically run `:CocUpdate` to get the latest versions of these plugins.
+
 ### FZF support
 
 By default, this vim config will use ctrl-p for fuzzy file opening (via `<leader>f`), however if it detects
@@ -57,7 +58,7 @@ You can install `fzf` with the following command:
     # then run the following to install the bash additions:
     /usr/local/opt/fzf/install
 
-if you use `ag`, you can (optionally) add the following line to your `~/.bash_profile`:
+if you use `ag`, you can (optionally) add the following line to your `~/.bash_profile` or `~/.zshrc`:
 
     export FZF_DEFAULT_COMMAND='ag -l --hidden --ignore .git -g ""'
 
