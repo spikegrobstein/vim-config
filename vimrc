@@ -31,7 +31,6 @@ endif
 runtime! plugins.vim
 runtime! init/**.vim
 
-
 " Machine-local vim settings - keep this at the end
 " --------------------------
 silent! source ~/.vimrc.local

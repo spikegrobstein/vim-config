@@ -1,0 +1,10 @@
+#! /usr/bin/env bash
+
+# update Plug
+nvim +PlugInstall +PlugUpdate +qa
+
+# quit and relaunch to load latest everything
+# and update all of the Coc plugins.
+# this will leave nvim open because if we add a +qa to the end, it quits without updating
+nvim +CocUpdate
+
