@@ -107,6 +107,7 @@ map <leader>u :GundoToggle<CR>
 " paste toggling.
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
+map <leader>p :set invpaste paste?<CR>
 
 " Movement within 'ins-completion-menu'
 imap <expr><C-j>   pumvisible() ? "\<C-n>" : "\<C-j>"
