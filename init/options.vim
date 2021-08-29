@@ -128,6 +128,18 @@ if filereadable("/usr/local/bin/python2")
   let g:python2_host_prog = '/usr/local/bin/python2'
 endif
 
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+if has("nvim-0.5.0") || has("patch-8.1.1564")
+  " Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
+else
+  set signcolumn=yes
+endif
+
+" this ensures that all shell scripts are treated with bash syntax
+" basically, some bash-specific syntaxes screw things up otherwise.
 let g:is_bash=1
 
+" the indentline guide characters
 let g:indentLine_char_list = ['┆', '┊']
