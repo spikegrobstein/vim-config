@@ -61,10 +61,6 @@ map <M-D-Up>    :cp<CR>
 map <M-D-Left>  :bp<CR>
 map <M-D-Right> :bn<CR>
 
-"indent/unindent visual mode selection with tab/shift+tab
-vmap <tab> >gv
-vmap <s-tab> <gv
-
 " refresh the FuzzyFinder cache
 map <leader>rf :FufRenewCache<CR>
 
