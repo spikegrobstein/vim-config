@@ -33,10 +33,10 @@ map <leader>x   :tabclose<CR>
 map <C-x>   :tabclose<CR>
 
 " Open .vimrc file in new tab. Think Command + , [Preferences...] but with Shift.
-map <D-<>       :tabedit ~/.vimrc<CR>
+map <D-<>       :tabedit ~/.config/nvim/init.vim<CR>
 
 " Reload .vimrc
-map <leader>rv  :source ~/.vimrc<CR>
+map <leader>rv  :source ~/.config/nvim/init.vim<CR>
 
 " Undo/redo - Doesn't MacVim already have this?
 map <D-z>       :earlier 1<CR>
