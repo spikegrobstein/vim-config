@@ -143,3 +143,8 @@ let g:is_bash=1
 
 " the indentline guide characters
 let g:indentLine_char_list = ['┆', '┊']
+
+" make additions super-obvious by using bgcolor in gitgutter
+highlight GitGutterAdd    guifg=#000000 guibg=#009900 ctermfg=0 ctermbg=2
+highlight GitGutterChange guifg=#000000 guibg=#bbbb00 ctermfg=0 ctermbg=3
+highlight GitGutterDelete guifg=#000000 guibg=#ff2222 ctermfg=0 ctermbg=1
