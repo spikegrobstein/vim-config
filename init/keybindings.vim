@@ -66,7 +66,9 @@ map <leader>rf :FufRenewCache<CR>
 
 " CtrlP / fzf
 if executable("fzf")
-  map <silent><leader>f  :FZF -x<CR>
+  " NOTE: this requires having 'fd' installed.
+  " should also install 'ripgrep' and 'bat'
+  map <silent><leader>f <cmd>lua require('fzf-lua').files()<CR>
 else
   map <silent><leader>f   :CtrlP<CR>
 endif

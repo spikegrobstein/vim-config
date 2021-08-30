@@ -31,8 +31,11 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+" NOTE: this requires having 'fd' installed.
+" should also install 'ripgrep' and 'bat'
+Plug 'ibhagwan/fzf-lua'
+Plug 'vijaymarupudi/nvim-fzf'
+Plug 'kyazdani42/nvim-web-devicons'
 
 
 " syntax plugins
