@@ -14,4 +14,8 @@ highlight colorcolumn guibg=#151122
 " which makes the splits more visible.
 highlight VertSplit guifg=#e0af68
 
+" the tab names in the tab bar
+" this is the fg_dark value from colors
+highlight TabLine guifg=#a9b1d6
+
 let g:neosolarized_italic = 0
