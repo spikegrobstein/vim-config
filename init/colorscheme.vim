@@ -10,4 +10,8 @@ set background=dark
 colorscheme tokyonight
 highlight colorcolumn guibg=#151122
 
+" specifically for tokyonight: this is that scheme's 'yellow'
+" which makes the splits more visible.
+highlight VertSplit guifg=#e0af68
+
 let g:neosolarized_italic = 0

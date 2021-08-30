@@ -53,8 +53,7 @@ Plug 'lepture/vim-jinja'
 " colorschemes
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
-Plug 'spikegrobstein/tokyonight.nvim', { 'branch': 'better-split' }
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'KabbAmine/yowish.vim'
 Plug 'shapeoflambda/dark-purple.vim'
 Plug 'tpope/vim-vividchalk'
