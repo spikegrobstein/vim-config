@@ -74,7 +74,7 @@ else
 endif
 
 " Git blame
-map <leader>gb   :Gblame<CR>
+map <leader>gb   :Git blame<CR>
 
 " Comment/uncomment lines with ^/ (vim registers ^/ as <C-_>
 map <C-_>   <plug>NERDCommenterToggle
