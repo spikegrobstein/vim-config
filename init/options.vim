@@ -137,3 +137,9 @@ let g:is_bash=1
 " the indentline guide characters
 let g:indentLine_char_list = ['┆', '┊']
 
+" turn off the fzf preview pane
+lua << EOF
+require('fzf-lua').setup{
+  preview_opts = 'hidden'
+}
+EOF
