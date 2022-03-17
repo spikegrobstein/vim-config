@@ -143,3 +143,8 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+" toggle hints for rust
+nnoremap <F3> :CocCommand rust-analyzer.toggleInlayHints<CR>
+
+nnoremap <F4> :CocCommand rust-analyzer.openDocs<CR>
