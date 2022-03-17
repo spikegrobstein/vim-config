@@ -147,4 +147,8 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " toggle hints for rust
 nnoremap <F3> :CocCommand rust-analyzer.toggleInlayHints<CR>
 
+" open documentation for the item that the cursor is over
 nnoremap <F4> :CocCommand rust-analyzer.openDocs<CR>
+
+" reload rust-analyzer so it re-parses things.
+nnoremap <F5> :CocCommand rust-analyzer.reload<CR>
