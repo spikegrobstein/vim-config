@@ -144,11 +144,3 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-" toggle hints for rust
-autocmd FileType rust nnoremap <buffer> <F3> :CocCommand rust-analyzer.toggleInlayHints<CR>
-
-" open documentation for the item that the cursor is over
-autocmd FileType rust nnoremap <buffer> <F4> :CocCommand rust-analyzer.openDocs<CR>
-
-" reload rust-analyzer so it re-parses things.
-autocmd FileType rust nnoremap <buffer> <F5> :CocCommand rust-analyzer.reload<CR>
