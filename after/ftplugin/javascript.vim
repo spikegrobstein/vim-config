@@ -8,3 +8,6 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\S\@<=\s\+$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+
+" autofix
+nnoremap <buffer> <F6> :CocCommand eslint.executeAutofix<CR>
