@@ -10,7 +10,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'airblade/vim-gitgutter'
 Plug 'epmatsw/ag.vim'
 Plug 'godlygeek/tabular'
-Plug 'heavenshell/vim-jsdoc'
+Plug 'heavenshell/vim-jsdoc', { 'for': ['javascript', 'javascript.jsx','typescript'], 'do': 'make install' }
 " Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-endwise'
