@@ -7,3 +7,8 @@ nnoremap <buffer> <F4> :CocCommand rust-analyzer.openDocs<CR>
 " reload rust-analyzer so it re-parses things.
 nnoremap <buffer> <F5> :CocCommand rust-analyzer.reload<CR>
 
+" show code-action menu
+nnoremap <buffer> <F6> <Plug>(coc-codeaction-selected)<CR>
+
+" run rust fmt on the document.
+nnoremap <buffer> <F8> :CocCommand editor.action.formatDocument<CR>
