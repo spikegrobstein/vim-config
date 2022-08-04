@@ -37,6 +37,8 @@ Plug 'ibhagwan/fzf-lua'
 Plug 'vijaymarupudi/nvim-fzf'
 Plug 'kyazdani42/nvim-web-devicons'
 
+Plug 'shime/vim-livedown'
+
 
 " syntax plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
