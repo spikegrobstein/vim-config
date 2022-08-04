@@ -143,3 +143,7 @@ require('fzf-lua').setup{
   preview_opts = 'hidden'
 }
 EOF
+
+" fixes an issue with up/down arrows pasting lines from the clipboard
+let g:AutoClosePreserveDotReg = 0 
+
