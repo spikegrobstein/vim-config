@@ -12,3 +12,8 @@ nnoremap <buffer> <F6> <Plug>(coc-codeaction-selected)<CR>
 
 " run rust fmt on the document.
 nnoremap <buffer> <F8> :CocCommand editor.action.formatDocument<CR>
+
+" use rust-gdb for debugging
+packadd termdebug
+let termdebugger="rust-gdb"
+

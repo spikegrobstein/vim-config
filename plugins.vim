@@ -51,6 +51,8 @@ Plug 'markcornick/vim-bats'
 Plug 'vito-c/jq.vim'
 Plug 'lepture/vim-jinja'
 
+Plug 'rust-lang/rust.vim'
+
 
 " colorschemes
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
