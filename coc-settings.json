@@ -1,15 +1,27 @@
 {
   "elixirLS.dialyzerEnabled": false,
-  "suggest.floatConfig": {
+    "suggest.floatConfig": {
     "rounded": true,
-    "border": true
-  },
-  "diagnostic.floatConfig": {
-    "rounded": true,
-    "border": true
+    "border": true,
+    "winblend": 15,
+    "borderhighlight": "FloatBorder"
   },
   "hover.floatConfig": {
     "rounded": true,
-    "border": true
+    "border": true,
+    "winblend": 15,
+    "borderhighlight": "FloatBorder"
+  },
+  "signature.floatConfig": {
+    "rounded": true,
+    "border": true,
+    "winblend": 15,
+    "borderhighlight": "FloatBorder"
+  },
+  "diagnostic.floatConfig": {
+    "rounded": true,
+    "border": true,
+    "winblend": 15,
+    "borderhighlight": "FloatBorder"
   }
 }
