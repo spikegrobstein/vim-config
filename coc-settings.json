@@ -1,0 +1,15 @@
+{
+  "elixirLS.dialyzerEnabled": false,
+  "suggest.floatConfig": {
+    "rounded": true,
+    "border": true
+  },
+  "diagnostic.floatConfig": {
+    "rounded": true,
+    "border": true
+  },
+  "hover.floatConfig": {
+    "rounded": true,
+    "border": true
+  }
+}
