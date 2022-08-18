@@ -58,17 +58,8 @@ Plug 'rust-lang/rust.vim'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
-Plug 'KabbAmine/yowish.vim'
-Plug 'shapeoflambda/dark-purple.vim'
-Plug 'tpope/vim-vividchalk'
 Plug 'overcache/NeoSolarized'
-"Plug 'altercation/vim-colors-solarized'
-"Plug 'lifepillar/vim-solarized8'
 Plug 'morhetz/gruvbox'
-Plug 'fcpg/vim-orbital'
-Plug 'liuchengxu/space-vim-dark'
-Plug 'cseelus/vim-colors-lucid'
-Plug 'Rigellute/shades-of-purple.vim'
 
 call plug#end()
 
