@@ -139,7 +139,9 @@ let g:indentLine_char_list = ['┆', '┊']
 
 lua << EOF
 -- turn off the fzf preview pane
-require('fzf-lua').setup{
+local fzf_lua = require('fzf-lua')
+
+fzf_lua.setup {
   preview_opts = 'hidden'
 }
 EOF
