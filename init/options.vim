@@ -144,6 +144,10 @@ local fzf_lua = require('fzf-lua')
 fzf_lua.setup {
   preview_opts = 'hidden'
 }
+
+-- icon-picker
+require("icon-picker").setup({ disable_legacy_commands = true })
+
 EOF
 
 " fixes an issue with up/down arrows pasting lines from the clipboard

@@ -72,3 +72,8 @@ map <leader>p :set invpaste paste?<CR>
 imap <expr><C-j>   pumvisible() ? "\<C-n>" : "\<C-j>"
 imap <expr><C-k>   pumvisible() ? "\<C-p>" : "\<C-k>"" " "
 
+lua << EOF
+local opts = { noremap = true, silent = true }
+
+vim.keymap.set("n", "<Leader><Leader>i", "<cmd>IconPickerNormal alt_font symbols nerd_font emoji<cr>", opts)
+EOF

@@ -39,6 +39,8 @@ Plug 'kyazdani42/nvim-web-devicons'
 
 Plug 'shime/vim-livedown'
 
+Plug 'stevearc/dressing.nvim'
+Plug 'ziontee113/icon-picker.nvim'
 
 " syntax plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
