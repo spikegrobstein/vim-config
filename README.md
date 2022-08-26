@@ -26,23 +26,29 @@ Updating is relatively straightforward:
 
     cd ~/.config/nvim
     git pull --rebase
-    nvim +PlugInstall +PlugUpdate +qa
+    nvim +PlugInstall +PlugUpdate +qa +CocUpdate
 
 ## Coc
 
 This repo uses `coc.vim`. make sure you have nodeJS set up (preferably >=14.x).
 
-You probably want to `:CocInstall` some of the following:
+You might want to `:CocInstall` some or all of the following, depending on what you do.
 
- * `coc-clangd`
- * `coc-css`
- * `coc-docker`
+ * `coc-clangd` -- for C/C++
+ * `coc-css` -- if you do CSS things
+ * `coc-deno` -- deno.land
+ * `coc-eslint` -- javascript linting
+ * `coc-git` -- for git commit completion (ie: conventional changelog)
+ * `coc-docker` -- dockerfile
  * `coc-elixir`
  * `coc-html`
  * `coc-json`
- * `coc-rust-analyzer`
- * `coc-sh`
- * `coc-tsserver`
+ * `coc-lua`
+ * `coc-markdownlint`
+ * `coc-rust-analyzer` -- Rust!
+ * `coc-sh` -- integrates well with `shellcheck`
+ * `coc-tsserver` -- for typescript docs + type checking
+ * `coc-yaml`
 
 Periodically run `:CocUpdate` to get the latest versions of these plugins.
 
@@ -57,12 +63,4 @@ You can install `fzf` with the following command:
     brew install --head fzf
     # then run the following to install the bash additions:
     /usr/local/opt/fzf/install
-
-if you use `ag`, you can (optionally) add the following line to your `~/.bash_profile` or `~/.zshrc`:
-
-    export FZF_DEFAULT_COMMAND='ag -l --hidden --ignore .git -g ""'
-
-that will use `ag` to list the files and ignore files/directories that are in your `.gitignore` as well as the `.git` directory, but will still list other invisible files.
-
-`ag` can be installed with brew as `the_silver_searcher`.
 
