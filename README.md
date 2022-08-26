@@ -26,7 +26,7 @@ Updating is relatively straightforward:
 
     cd ~/.config/nvim
     git pull --rebase
-    nvim +PlugInstall +PlugUpdate +qa +CocUpdate
+    nvim +PlugInstall +PlugUpdate +CocUpdate +qa
 
 ## Coc
 
