@@ -35,10 +35,6 @@ map <leader>rv  :source ~/.config/nvim/init.vim<CR>
 nnoremap <C-e>  3<C-e>
 nnoremap <C-y>  3<C-y>
 
-" move to beginning or end of line while in insert mode
-inoremap <C-e> <C-o>$
-inoremap <C-a> <C-o>0
-
 " CtrlP / fzf
 if executable("fzf")
   " NOTE: this requires having 'fd' installed.
