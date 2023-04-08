@@ -29,7 +29,12 @@ endif
 " ---------------------------
 
 runtime! plugins.vim
+
+" load the lua config
+luafile init/**.lua
+
 runtime! init/**.vim
+
 
 " Machine-local vim settings - keep this at the end
 " --------------------------
