@@ -63,11 +63,6 @@ imap <MiddleMouse>  <Nop>
 map <F1>            <Nop>
 imap <F1>           <Nop>
 
-" paste toggling.
-nnoremap <F2> :set invpaste paste?<CR>
-set pastetoggle=<F2>
-map <leader>p :set invpaste paste?<CR>
-
 " Movement within 'ins-completion-menu'
 imap <expr><C-j>   pumvisible() ? "\<C-n>" : "\<C-j>"
 imap <expr><C-k>   pumvisible() ? "\<C-p>" : "\<C-k>"" " "
