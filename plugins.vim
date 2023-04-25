@@ -42,6 +42,8 @@ Plug 'shime/vim-livedown'
 Plug 'stevearc/dressing.nvim'
 Plug 'ziontee113/icon-picker.nvim'
 
+Plug 'danymat/neogen'
+
 " for nx integration
 " Not really great UX
 " Plug 'Equilibris/nx.nvim'

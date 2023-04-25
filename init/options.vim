@@ -148,6 +148,9 @@ fzf_lua.setup {
 -- icon-picker
 require("icon-picker").setup({ disable_legacy_commands = true })
 
+-- neogen
+require('neogen').setup()
+
 EOF
 
 " fixes an issue with up/down arrows pasting lines from the clipboard
