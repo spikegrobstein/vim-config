@@ -70,5 +70,5 @@ imap <expr><C-k>   pumvisible() ? "\<C-p>" : "\<C-k>"" " "
 lua << EOF
 local opts = { noremap = true, silent = true }
 
-vim.keymap.set("n", "<Leader><Leader>i", "<cmd>IconPickerNormal alt_font symbols nerd_font emoji<cr>", opts)
+vim.keymap.set("n", "<Leader>I", "<cmd>IconPickerNormal alt_font symbols nerd_font emoji<cr>", opts)
 EOF

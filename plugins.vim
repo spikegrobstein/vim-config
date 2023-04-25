@@ -42,6 +42,12 @@ Plug 'shime/vim-livedown'
 Plug 'stevearc/dressing.nvim'
 Plug 'ziontee113/icon-picker.nvim'
 
+" for nx integration
+" Not really great UX
+" Plug 'Equilibris/nx.nvim'
+" Plug 'nvim-lua/plenary.nvim'
+" Plug 'nvim-telescope/telescope.nvim'
+
 " syntax plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plug 'sheerun/vim-polyglot' " install most major language syntax plugins
