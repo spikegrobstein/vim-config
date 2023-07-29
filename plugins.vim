@@ -22,8 +22,6 @@ Plug 'vim-scripts/vcscommand.vim'
 Plug 'Townk/vim-autoclose'
 Plug 'camspiers/lens.vim'
 
-Plug 'drzel/quakec.vim'
-
 Plug 'lukas-reineke/indent-blankline.nvim'
 
 " Plug 'vim-airline/vim-airline'
@@ -35,9 +33,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " should also install 'ripgrep' and 'bat'
 Plug 'ibhagwan/fzf-lua'
 Plug 'vijaymarupudi/nvim-fzf'
+
 Plug 'kyazdani42/nvim-web-devicons'
 
-Plug 'shime/vim-livedown'
+" Plug 'shime/vim-livedown'
 
 Plug 'stevearc/dressing.nvim'
 Plug 'ziontee113/icon-picker.nvim'
@@ -63,6 +62,7 @@ Plug 'lepture/vim-jinja'
 
 Plug 'rust-lang/rust.vim'
 
+Plug 'drzel/quakec.vim'
 
 " colorschemes
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
