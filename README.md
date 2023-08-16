@@ -1,4 +1,6 @@
-# vim-config
+# vim-config (DEPRECATED)
+
+> deprecated in favour of https://github.com/spikegrobstein/neovim-config
 
 This was heavily based on `pivotalcommon/vim-config`. Previously it existed as a fork, but it's not only
 diverged incredibly far, but also has different goals, so I broke it into its own repository.
